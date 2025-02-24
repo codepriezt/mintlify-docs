@@ -22,7 +22,7 @@
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
+    "name": "Console",
     "url": "https://console.cloudsania.com/home"
   },
   "tabs": [
