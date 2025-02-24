@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "https://cloudsania.com/_next/static/media/Logo-2.a0ae6c6b.svg",
-  
+    "dark": "https://cloudsania.com/_next/static/media/Logo-2.a0ae6c6b.svg"
+
   },
   "favicon": "/favicon.svg",
   "colors": {
