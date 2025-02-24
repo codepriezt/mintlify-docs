@@ -3,23 +3,29 @@ title: "Introduction"
 description: "Cloudsania is a DevOps Automation platform that automates, configure and deploys application across various cloud providers. Cloudsania enables you to easily set up your application and infrastructure workloads."
 ---
 
-# ![](https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F9D0JTnpRisktkAiaEL7H%2Fuploads%2FG74Q6w3QWTcntIgiCRkN%2FScreenshot%202024-10-02%20at%2019.51.21.png?alt=media\&token=f9cfa18c-89f5-4675-ba99-3458354dfe0b)
-
 ## The Cloudsania Platform
 
 Cloudsania allows you to connect to multiple cloud providers, package and run your application in our isolated configured stacks called[ konstack](https://app.gitbook.com/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/environments/konstacks).  Konstack is a combination of various cloud resources and configurations that suit your needs and lets you run one or more containerized applications.
 
 We offer a comprehensive suite of tools and services designed to simplify workload setup, deployment, enhance security, and maximize cloud resources and save cost, allowing users:
 
-<Accordion title="Seamlessly deploy your applications" defaultOpen={false} />
+<CardGroup cols={3}>
+  <Card title="Connect To Your Cloud Service Providers" icon="cloud" href="/CloudServiceProvers">
 
-<Accordion title="Connect to various cloud providers" defaultOpen={false} />
+  </Card>
 
-<Accordion title="Schedule session for architectural reviews" defaultOpen={false} />
+  <Card title="Integrate Your Code Repository" icon="code" href="/integrations" />
 
-<Accordion title="Conduct security scans for vulnerabilities" defaultOpen={false} />
+  <Card title="Deploy Your Applications" icon="rocket" href="/projects" />
+</CardGroup>
 
-<Accordion title="Gain valuable insights through monitoring and logging channels" defaultOpen={false} />
+<CardGroup cols={3}>
+  <Card title="Schedule  Architectural Reviews" icon="calendar" href="/scheduling" />
+
+  <Card title="Conduct Security Scans" icon="shield" />
+
+  <Card title="Integrate To Slack" icon="slack" />
+</CardGroup>
 
 ### What can I use Cloudsania for?
 
@@ -27,44 +33,36 @@ We offer a comprehensive suite of tools and services designed to simplify worklo
 
 Cloudsania streamlines the deployment lifecycle by allowing organizations and developers to segment their products into [projects](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/projects), providing configured CI/CD stages for different environments and the ability to integrate tools across source code repository, communication and productivity channels.
 
-**Consider the following example scenarios:**
+**Consider the following use cases:**
 
 * As a startup owner, your software developers have developed an application and they are ready to go live and set up other environments with no cloud experience, Cloudsania is the way to go 🚀
 
 * Are you a digital agency that develops projects for clients and you are looking to manage your infrastructure in a central platform, look no further Cloudsania is here for you.
 
-* Are you struggling to configure your infrastructure workload following best practices based on [providers'](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/cloud-service-providers) standards, or struggling to create your CI/CD pipeline, you are covered.
+* Are you struggling to configure your infrastructure workload following best practices based on providers' standards, or struggling to create your CI/CD pipeline, you are covered.
 
-* As a startup owner or developer are you seeking for architectural advise for your project? be it the cloud providers to use to save cost or the best architectural design to apply based on your demands, with Cloudsania you can use the '[scheduling](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/scheduling)' feature to organize a meeting to speak with industry-experienced architects.
+* As a startup owner or developer are you seeking architectural advise for your project? be it the cloud providers to use to save cost or the best architectural design to apply based on your demands, with Cloudsania you can use the '[scheduling](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/scheduling)' feature to organize a meeting to speak with industry-experienced architects.
 
-### How does it work?
+### How do I get started?
 
-1️⃣ [**Create an account**](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/getting-started/setup-account)
+Are you new to Cloudsania? or an existing user looking to get started with the platform? This guide walks through how to get started with Cloudsania — from setting up an account, creating a cloud connector right up to deploying a project.
 
-* **Verify Your Email**
+### Overview
 
-* **Set Up Your Organization**
+<Steps>
+  <Step title="Account Setup">
+    Sign up to Cloudsania and set up your organisations with your preferred pricing plan tailored to your Organisations's need.
+  </Step>
 
-* **Select Your Subscription Plan**
+  <Step title="Connect To Your Cloud Provider">
+    Connect Cloudsania to your cloud service provider to give Cloudsania the permission to handle your infrastructure setup using our configured konstacks.
+  </Step>
 
-**As a user, we have streamlined the features to get you started very quickly:**
+  <Step title="Integrate Your Code Repository">
+    Integrating your code repository from  GitHub, GitLab or Bitbucket, to allow Cloudsania access to configure your CI/CD pipeline  for easy building, testing and deploying of your application.
+  </Step>
 
-![](/image.png "Easy setup screen")
-
-2️⃣ [C**onnect to Cloud Provider**](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/getting-started/cloud-connector)
-
-By connecting Cloudsania to your cloud service provider of choice, be it [AWS](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/cloud-service-providers/aws), [NameCheap](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/cloud-service-providers/namecheap) and so on, you give Cloudsania the permission to handle your infrastructure setup using our configured konstacks and automate your deployment from your source code repository tools.
-
-3️⃣ [Integrate Code Repository](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/integrations)
-
-By Integrating your code repository from either GitHub, GitLab or Bitbucket, Cloudsania will have access to configure your CI/CD pipeline across different environments for easy building, testing and deploying of your application.
-
-4️⃣ [Deploy a Project](/o/Ig9yaTRXbH9HdjTjOESC/s/9D0JTnpRisktkAiaEL7H/projects)
-
-Every application is considering a project in Cloudsania, once a project is created proceed to set-up your preferred environment :
-
-* Dev Environment
-
-* Prod Environment
-
-* Ability to create your custom environment.
+  <Step title="Deploy Your Project">
+    Every application is considered a project in Cloudsania, once a project is created proceed to set-up your preferred environment :
+  </Step>
+</Steps>
