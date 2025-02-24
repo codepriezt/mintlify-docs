@@ -86,8 +86,7 @@
         "integrations/github",
         "integrations/cloudflare",
         "integrations/digitalOcean",
-        "integrations/awsCloud53",
-
+        "integrations/awsCloud53"
         [
 
           {
