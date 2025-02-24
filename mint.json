@@ -73,20 +73,20 @@
     {
     "group": "Environments",
       "pages": [
-        "environments/konstacks",
-        "environments/addons",
-        "environments/dnsConfigurations",
-        "environments/cicdConfigurations"
+        "/konstacks",
+        "/addons",
+        "/dnsConfigurations",
+        "/cicdConfigurations"
       ]
     },
     
     {
       "group": "Integrations",
       "pages": [
-        "integrations/github",
-        "integrations/cloudflare",
-        "integrations/digitalOcean",
-        "integrations/awsCloud53"
+        "/github",
+        "/cloudflare",
+        "/digitalOcean",
+        "/awsCloud53"
       ]
     },
     {
