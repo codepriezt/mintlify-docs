@@ -65,12 +65,7 @@
       "group": "Projects",
       "pages": [
         "appServices",
-        "projectsModes",
-        "environments",
-        "environments/knostacks",
-        "environments/addons",
-        "environments/dnsConfigurations",
-        "environments/cicdConfigurations"
+        "projectsModes"
       ]
     },
 
@@ -94,7 +89,7 @@
     },
     {
       "group": "Scheduling",
-      "pages":"scheduling"
+      "pages": "scheduling"
   
     },
     {
