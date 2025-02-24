@@ -1,5 +1,116 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+description: "This guide describes how to set up AWS as a Cloud Provider on Cloudsania"
+title: "Setting Up AWS As A Cloud Provider"
 ---
 
+## ☁️🔗 **Connect AWS to Cloudsania:**
+
+<Steps>
+  <Step title="Log in to Your Cloudsania Account.">
+
+  </Step>
+
+  <Step title="Navigate to the Cloud Connectors section and click 'New Connector'.">
+
+  </Step>
+
+  <Step title="Select AWS from the list of cloud service providers.">
+
+  </Step>
+
+  <Step title="Provide Your Connector Details">
+    * Connector Name
+
+    * Select your AWS Regions from the list of regions, you'll get a dropdown to choose your desired  AWS Regions.
+
+      ![](https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FxE0zkQqnBb6u51yo4i0g%252Fimage.png%3Falt%3Dmedia%26token%3Dde5e51ea-763c-46f3-8571-4fd46eee69be&width=768&dpr=4&quality=100&sign=9a29fd65&sv=2)
+  </Step>
+
+  <Step title="Configure Connector Access">
+    **Step 1: Choose the appropriate access privileges (Default Access or Least Privilege Access) and click  'Continue'.**
+
+    * Default Access- Allows Cloudsania to scan your resources and automatically include future capabilities (**Highly recommended**)
+
+    * Least Privilege Access- Grants Cloudsania access only to the current permissions needed for the selected konstack. If you select the least privileged permissions, you'll get a konstack dropdown for you to choose your desired cloud service.
+
+      ![](https://api.monosnap.com/file/download?id=jLYxntjozskEu1PF3YHHcf4AUdMhg7)
+
+
+
+
+      **Step 2:   Configure Connector For default-access**
+
+    1. &#x20; In your [Amazon Web Services console](https://buck.cloudsania.com/cloud-connector/aws/configure#link), under Security, Identity & Compliance, select IAM.
+
+    <img height="1614" width="2872" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FBRDKE1zts1873Wpw3Gzm%252Fimage.png%3Falt%3Dmedia%26token%3D996db1f4-e997-4207-8ae2-62f6b6990572&width=768&dpr=4&quality=100&sign=eef3fa5f&sv=2" />
+
+    1. You need to create a user
+
+    <img height="1632" width="2874" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FUq3TgmpC5JEmyMkIREIl%252Fimage.png%3Falt%3Dmedia%26token%3D9071fd39-222e-4c0b-ad0b-7f966e0b83c1&width=768&dpr=4&quality=100&sign=a8a68b70&sv=2" />
+
+    3\.  In the 'Specify User Details' step, provide a user name for the Cloudsania connector and click 'Next'.
+
+    Naming Convention
+
+    **The user name must follow the Cloudsania naming convention:**
+
+
+    For default connector: `cloudsania-default-access-connector`
+
+    1. <img height="1606" width="2856" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252F9qODHrbaN0GAgMqi0KPY%252Fimage.png%3Falt%3Dmedia%26token%3D8be12463-937f-4571-bbe5-764772616391&width=768&dpr=4&quality=100&sign=12ed6537&sv=2" />
+
+       In the 'Set Permission' step, select 'Attach existing policies directly', then click 'Create policy'.
+
+    <img height="1616" width="2848" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252F2gvjXJIRx0XeHeCsWASF%252Fimage.png%3Falt%3Dmedia%26token%3D8c42fa6a-7661-4a92-a66f-7ec90d56190b&width=768&dpr=4&quality=100&sign=8b0ed7df&sv=2" />
+
+    1. In the 'Specify permission' step, Select the 'JSON' tab
+
+    <img height="1602" width="2850" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FfBEk1gz5eJEnVC5hxNj8%252Fimage.png%3Falt%3Dmedia%26token%3D53053f89-90b5-4313-b54d-f26ab9ba8060&width=768&dpr=4&quality=100&sign=189c4e5a&sv=2" />
+
+    1. Paste the Cloudsania default policy into the provided area, and click  'Next':
+
+    <img height="1308" width="1592" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FKSCZFGrivcCWY11vZeWA%252Fimage.png%3Falt%3Dmedia%26token%3Dd41e6a63-4d9c-4f66-aef1-cda241072a6f&width=768&dpr=4&quality=100&sign=1d1a35b5&sv=2" />
+
+    1. In the 'Review and create' step, enter the Policy name, and description (optional) review the permissions, specify details, and tags (optional), and then create the policy.
+
+    <img height="1624" width="2846" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FVf5rauQ9Re1QoKxmgmz4%252Fimage.png%3Falt%3Dmedia%26token%3D9327a4f1-0d28-43ab-82f1-01a87477e81b&width=768&dpr=4&quality=100&sign=e4216ceb&sv=2" />
+
+    1. Return to the 'Set Permission' step, search for the created policy, select the policy and click 'Next'.
+
+    <img height="1542" width="2872" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FLQHQRsIEIKkCzHQNEE7s%252Fimage.png%3Falt%3Dmedia%26token%3D58a40728-db34-4987-bf72-a33ed09e9abb&width=768&dpr=4&quality=100&sign=a056774&sv=2" />
+
+    1. In the 'Review and create' step, review your choices.  If the details are correct, select 'Create user''.
+
+    <img height="1620" width="2850" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252Fw0rIf2eN2ttESrTwLoym%252Fimage.png%3Falt%3Dmedia%26token%3D63f99460-cf5e-44c2-ad4a-8c5280f94908&width=768&dpr=4&quality=100&sign=c8dbf43f&sv=2" />
+
+    1. Navigate to the User info page, click  'Create access key'
+
+    <img height="1596" width="2844" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FH6DY2PqXfAuk3WjSDJmx%252Fimage.png%3Falt%3Dmedia%26token%3D883f874b-14f5-457b-a904-11ed3b18a838&width=768&dpr=4&quality=100&sign=44b972cd&sv=2" />
+
+    1. On the Access key best practice & alternatives step, select 'Command Line Interface (CLI). Click on the checkbox for confirmation. Proceed to click  'Next'.
+
+    <img height="1596" width="2872" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FN5O2g4H43AUA8qrU3DxF%252Fimage.png%3Falt%3Dmedia%26token%3D07e9fdea-f4fc-4829-8f6b-7dd837e0b8fa&width=768&dpr=4&quality=100&sign=b58c575f&sv=2" />
+
+    1. Set a description tag (optional), then click  'Create access key'
+
+    <img height="1614" width="2854" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FSGuaZamxkHV6FbKiN24H%252Fimage.png%3Falt%3Dmedia%26token%3D3d73dccf-eec8-4e6d-a4a9-f5575817e6fc&width=768&dpr=4&quality=100&sign=18eb60c4&sv=2" />
+
+    1. In the 'Retrieve access key' step, select Download .csv to save a copy of the new user's credentials. You'll need these later, then click on 'Done'.
+
+    <img height="1612" width="2848" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FFKQkJ0fyCE6wxbmsb9RO%252Fimage.png%3Falt%3Dmedia%26token%3D118c310d-b0bd-4872-b477-dbd5fb31cc18&width=768&dpr=4&quality=100&sign=5774cd0a&sv=2" />
+
+    5️⃣ Enter Access and Secret keys:&#x20;
+
+    * Enter your AWS account ID.
+
+    * Paste the Access key and Secret key from the .csv file into the relevant fields, and select 'Create'.
+
+    <img height="1568" width="2870" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252F8XFYsLP3ETIg5Sktepkr%252Fimage.png%3Falt%3Dmedia%26token%3D2a4f2210-8ade-46db-82b6-9ded0f2c32be&width=768&dpr=4&quality=100&sign=64c0df7&sv=2" />
+
+    * After successfully creating your **AWS connector,** you will be navigated to the **Connector** page to view and manage the setup connector.
+
+    <img height="1630" width="2876" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FrDoZQW6jPACIiS1vKxpb%252Fimage.png%3Falt%3Dmedia%26token%3D79e23890-af8d-442f-9496-e28b5b524f06&width=768&dpr=4&quality=100&sign=4320b53a&sv=2" />
+  </Step>
+</Steps>
+
+##
