@@ -87,14 +87,14 @@
         "integrations/cloudflare",
         "integrations/digitalOcean",
         "integrations/awsCloud53"
-        [
+      ]
     },
 
           {
       "group": "Scheduling",
       "pages": [
         "scheduling"
-        [
+      ]
 
     },
 
