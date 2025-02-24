@@ -39,14 +39,12 @@
     }
   ],
   "navigation": [
-
-   {
+    {
       "group": "Overview",
       "pages": [
-        "Overview"
+        "overview"
       ]
     },
-    
     {
       "group": "Getting Started",
       "pages": [
@@ -55,16 +53,14 @@
         "cloudConnectors"
       ]
     },
-
     {
       "group": "Cloud Service Providers",
       "pages": [
-        "ClouServiceProviders/aws",
-        "ClouServiceProviders/digitalOcean",
-        "ClouServiceProviders/nameCheap"
+        "cloudServiceProviders/aws",
+        "cloudServiceProviders/digitalOcean",
+        "cloudServiceProviders/nameCheap"
       ]
     },
-
     {
       "group": "Projects",
       "pages": [
@@ -73,11 +69,20 @@
         "environments",
         "environments/knostacks",
         "environments/addons",
-        "environments/dns-configurations",
-        "environments/cicd-configurations"
+        "environments/dnsConfigurations",
+        "environments/cicdConfigurations"
       ]
     },
 
+    "group": "Environments",
+      "pages": [
+        "environments/konstacks",
+        "environments/addons",
+        "environments/dnsConfigurations",
+        "environments/cicdConfigurations"
+      ]
+    },
+    
     {
       "group": "Integrations",
       "pages": [
@@ -87,22 +92,17 @@
         "integrations/awsCloud53"
       ]
     },
-
-          {
+    {
       "group": "Scheduling",
-      "pages": [
-        "scheduling"
-      ]
-
+      "pages":"scheduling"
+  
     },
-
     {
       "group": "API Documentation",
       "pages": [
         "api-reference/introduction"
       ]
     },
-    
     {
       "group": "Endpoint Examples",
       "pages": [
@@ -113,10 +113,9 @@
     }
   ],
   "footerSocials": {
-    "x":"https://x.com/cloudsania",
+    "twitter": "https://x.com/cloudsania",
     "instagram": "https://www.instagram.com/cloudsania/?hl=en",
     "linkedin": "https://linkedin.com/company/mintlify",
-    "facebook":"https://web.facebook.com/cloudsania"
-  
+    "facebook": "https://web.facebook.com/cloudsania"
   }
 }
