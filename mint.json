@@ -91,7 +91,10 @@
     },
     {
       "group": "Scheduling",
-      "pages": "scheduling"
+      "pages":
+      [ "/scheduling"
+      ]
+  
   
     },
     {
