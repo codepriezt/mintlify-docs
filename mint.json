@@ -23,7 +23,7 @@
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://console.cloudsania.com/home"
   },
   "tabs": [
     {
@@ -53,21 +53,49 @@
       "group": "Get Started",
       "pages": [
         "introduction",
-        "quickstart",
-        "development"
+        "accountSetup",
+        "cloudConnectors"
       ]
     },
+
     {
-      "group": "Essentials",
+      "group": "Cloud Service Providers",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "ClouServiceProviders/aws",
+        "ClouServiceProviders/digitalOcean",
+        "ClouServiceProviders/nameCheap"
       ]
     },
+
+    {
+      "group": "Projects",
+      "pages": [
+        "appServices",
+        "projectsModes",
+        "environments",
+        "environments/knostacks",
+        "environments/addons",
+        "environments/dns-configurations",
+        "environments/cicd-configurations"
+      ]
+    },
+
+    {
+      "group": "Integrations",
+      "pages": [
+        "integrations/github",
+        "integrations/cloudflare",
+        "integrations/digitalOcean",
+        "integrations/awsCloud53",
+
+        [
+
+          {
+      "group": "Scheduling",
+      "pages": [
+        "scheduling"
+        [
+
     {
       "group": "API Documentation",
       "pages": [
@@ -84,8 +112,10 @@
     }
   ],
   "footerSocials": {
-    "x": "https://x.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://linkedin.com/company/mintlify"
+    "x":"https://x.com/cloudsania",
+    "instagram": "https://www.instagram.com/cloudsania/?hl=en",
+    "linkedin": "https://linkedin.com/company/mintlify",
+    "facebook":""
+  
   }
 }
