@@ -75,8 +75,8 @@
       "pages": [
         "/konstacks",
         "/addons",
-        "/dnsConfigurations",
-        "/cicdConfigurations"
+        "/DNS Configurations",
+        "/CI/CD Configurations"
       ]
     },
     
