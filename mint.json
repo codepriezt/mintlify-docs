@@ -42,7 +42,7 @@
     {
       "group": "Overview",
       "pages": [
-        "overview"
+        "Overview"
       ]
     },
     {
@@ -56,7 +56,7 @@
     {
       "group": "Cloud Service Providers",
       "pages": [
-        "cloudServiceProviders/aws",
+        "CloudServiceProviders/aws",
         "cloudServiceProviders/digitalOcean",
         "cloudServiceProviders/nameCheap"
       ]
@@ -73,26 +73,26 @@
     {
     "group": "Environments",
       "pages": [
-        "/konstacks",
-        "/addons",
-        "/DNS Configurations",
-        "/CI/CD Configurations"
+        "konstacks",
+        "addons",
+        "dnsConfigurations",
+        "cicdPipelines"
       ]
     },
     
     {
       "group": "Integrations",
       "pages": [
-        "/github",
-        "/cloudflare",
-        "/digitalOcean",
-        "/awsCloud53"
+        "github",
+        "cloudflare",
+        "digitalOcean",
+        "awsCloud53"
       ]
     },
     {
       "group": "Scheduling",
       "pages":
-      [ "/scheduling"
+      [ "scheduling"
       ]
   
   
