@@ -42,73 +42,55 @@
     {
       "group": "Overview",
       "pages": [
-        "overview"
+        "/overview"
       ]
     },
     {
       "group": "Getting Started",
       "pages": [
-        "introduction",
-        "accountSetup",
-        "cloudConnectors"
+        "/introduction",
+        "/accountSetup",
+        "/cloudConnectors"
       ]
     },
     {
       "group": "Cloud Service Providers",
       "pages": [
+        "cloudServiceProviders/cloudProviders",
         "cloudServiceProviders/aws",
         "cloudServiceProviders/digitalOcean",
         "cloudServiceProviders/nameCheap"
       ]
     },
     {
-      "group": "Projects",
+      "group": "Project",
       "pages": [
-        "appServices",
-        "projectsModes"
+        "project/appServices",
+        "project/projectsMode"
       ]
     },
-
-
     {
-    "group": "Environments",
+      "group": "Environments",
       "pages": [
-        "/konstacks",
-        "/addons",
-        "/DNS Configurations",
-        "/CI/CD Configurations"
+        "environments/konstacks",
+        "environments/addons",
+        "environments/dnsConfigurations",
+        "environments/cicdPipelines"
       ]
     },
-    
     {
       "group": "Integrations",
       "pages": [
-        "/github",
-        "/cloudflare",
-        "/digitalOcean",
-        "/awsCloud53"
+        "integrations/github",
+        "integrations/cloudflare",
+        "integrations/digitalOcean",
+        "integrations/awsCloud53"
       ]
     },
     {
       "group": "Scheduling",
-      "pages":
-      [ "/scheduling"
-      ]
-  
-  
-    },
-    {
-      "group": "API Documentation",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "/scheduling"
       ]
     }
   ],
