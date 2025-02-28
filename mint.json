@@ -69,9 +69,8 @@
         "project/projectsMode"
       ]
     },
-
     {
-    "group": "Environments",
+      "group": "Environments",
       "pages": [
         "environments/konstacks",
         "environments/addons",
@@ -79,7 +78,6 @@
         "environments/cicdPipelines"
       ]
     },
-    
     {
       "group": "Integrations",
       "pages": [
@@ -91,11 +89,10 @@
     },
     {
       "group": "Scheduling",
-      "pages":
-      [ "/scheduling"
+      "pages": [
+        "/scheduling"
       ]
-    },
-
+    }
   ],
   "footerSocials": {
     "twitter": "https://x.com/cloudsania",
