@@ -90,14 +90,14 @@
     {
       "group": "Scheduling",
       "pages": [
-        "/scheduling"
+        "scheduling"
       ]
     }
   ],
   "footerSocials": {
     "twitter": "https://x.com/cloudsania",
     "instagram": "https://www.instagram.com/cloudsania/?hl=en",
-    "linkedin": "https://linkedin.com/company/mintlify",
+    "linkedin": "https://linkedin.com/company/cloudsania",
     "facebook": "https://web.facebook.com/cloudsania"
   }
 }
