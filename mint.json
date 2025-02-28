@@ -42,15 +42,15 @@
     {
       "group": "Overview",
       "pages": [
-        "/overview"
+        "overview"
       ]
     },
     {
       "group": "Getting Started",
       "pages": [
-        "/introduction",
-        "/accountSetup",
-        "/cloudConnectors"
+        "introduction",
+        "accountSetup",
+        "cloudConnectors"
       ]
     },
     {
