@@ -40,13 +40,13 @@
   ],
   "navigation": [
     {
-      "group": "overview",
+      "group": "Overview",
       "pages": [
         "overview"
       ]
     },
     {
-      "group": "gettingStarted",
+      "group": "Getting Started",
       "pages": [
         "gettingStarted/introduction",
         "gettingStarted/accountSetup",
@@ -63,10 +63,10 @@
       ]
     },
     {
-      "group": "Project",
+      "group": "Projects",
       "pages": [
-        "project/appServices",
-        "project/projectMode"
+        "projects/appServices",
+        "projects/projectMode"
       ]
     },
     {
