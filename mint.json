@@ -65,8 +65,9 @@
     {
       "group": "Projects",
       "pages": [
-        "projects/appServices",
-        "projects/projectMode"
+        "projects/projectMode",
+        "projects/appServices"
+      
       ]
     },
     {
