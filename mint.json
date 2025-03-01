@@ -40,17 +40,17 @@
   ],
   "navigation": [
     {
-      "group": "Overview",
+      "group": "overview",
       "pages": [
         "overview"
       ]
     },
     {
-      "group": "Getting Started",
+      "group": "gettingStarted",
       "pages": [
-        "introduction",
-        "accountSetup",
-        "cloudConnectors"
+        "gettingStarted/introduction",
+        "gettingStarted/accountSetup",
+        "gettingStarted/cloudConnectors"
       ]
     },
     {
