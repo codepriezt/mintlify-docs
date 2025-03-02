@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.jpg",
-    "light": "/logo/light.jpg"
+    "dark": "/logo/dark.png",
+    "light": "/logo/light.png"
   },
   "favicon": "/favicon.png",
   "colors": {
@@ -48,43 +48,44 @@
     {
       "group": "Getting Started",
       "pages": [
-        "gettingStarted/introduction",
-        "gettingStarted/accountSetup",
-        "gettingStarted/cloudConnectors"
+        "getting-started/introduction",
+        "getting-started/account-setup",
+        "getting-started/cloud-connectors"
       ]
     },
     {
       "group": "Cloud Service Providers",
       "pages": [
-        "cloudServiceProviders/cloudProviders",
-        "cloudServiceProviders/aws",
-        "cloudServiceProviders/digitalOcean",
-        "cloudServiceProviders/nameCheap"
+        "cloud-service-providers/cloud-providers",
+        "cloud-service-providers/aws",
+        "cloud-service-providers/digital-ocean",
+        "cloud-service-providers/name-cheap"
       ]
     },
     {
       "group": "Projects",
       "pages": [
-        "projects/projectSetup",
-        "projects/appService"
+        "projects/project-setup",
+        "projects/app-service"
       
       ]
     },
     {
       "group": "Environments",
       "pages": [
+        "environments/environment-setup",
         "environments/konstacks",
         "environments/addons",
-        "environments/dnsConfigurations",
-        "environments/cicdPipelines"
+        "environments/dns-configurations",
+        "environments/cicd-pipelines"
       ]
     },
     {
       "group": "Integrations",
       "pages": [
         "integrations/github",
-        "integrations/cloudflare",
-        "integrations/digitalOcean",
+        "integrations/cloud-flare",
+        "integrations/digital-ocean",
         "integrations/route53"
       ]
     },
