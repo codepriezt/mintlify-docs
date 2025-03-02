@@ -85,7 +85,7 @@
         "integrations/github",
         "integrations/cloudflare",
         "integrations/digitalOcean",
-        "integrations/awsCloud53"
+        "integrations/route53"
       ]
     },
     {
