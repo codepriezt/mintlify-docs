@@ -65,7 +65,7 @@
     {
       "group": "Projects",
       "pages": [
-        "projects/projectMode",
+        "projects/projectSetup",
         "projects/appServices"
       
       ]
