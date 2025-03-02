@@ -1,4 +1,129 @@
 ---
 title: "CI/CD Pipelines"
-description: "Description of your new file."
+description: "The following guide walks through how to create, configure, and monitor CI/CD pipelines within an Environment for a specified project."
 ---
+
+The CI/CD Pipelines feature automates the process of building, testing, and deploying applications efficiently. By integrating with version control repositories like GitHub and GitLab, it enables organisations to automate software delivery, minimizing manual intervention. This ensures that code changes are continuously integrated, tested, and deployed to production seamlessly, supporting a continuous integration and continuous deployment (CI/CD) workflow.
+
+## How to Set Up CI/CD Pipelines
+
+### **Step 1: Navigate to the CI/CD Pipelines Page**
+
+1. Navigate to Projects from the sidebar.
+
+2. Select your Project and the corresponding  Environment you want to initiate the setup for.
+
+3. Click on the CI/CD Pipelines tab.
+
+4. If no pipelines exist, the screen will display an option to create one.
+
+5. Click Create New Pipeline or Setup New CI/CD Pipeline to begin.
+
+![](https://api.monosnap.com/file/download?id=4kTceMT7AHTIyuRduAgZA2HkTFnRem)
+
+<Note>
+  ### **Prerequisites for Setting Up a CI/CD Pipeline**
+
+  #### **1. Integrated a Version Control System and Configured a Repository**
+
+  To automate deployments, you need to integrate a version control system (e.g., **GitHub** ) and configure a repository. This ensures your source code is accessible for automated builds and deployments. If you haven’t linked a repository yet, follow the guide below:
+  👉 [**Set Up Version Control and Configure Your Repository**](#)
+
+  #### **2. Deploy a Konstack or App Service**
+
+  Your pipeline may require a compute service (**Konstack**) or an **App Service** to deploy the application. Ensure you have deployed either before proceeding. If you haven't set one up, refer to the following guides:
+
+  * [**Deploy a Konstack**](#)
+
+  * [**Deploy an App Service**](#)
+
+  Once these prerequisites are met, you can proceed with setting up your **CI/CD Pipeline**.
+</Note>
+
+
+
+### **Step 1 : Setting Up a New CI/CD Pipeline (Step 1)**
+
+1. Click **Setup New CI/CD Pipeline**.
+
+2. Under **Source**, select:
+
+   * **Linked Repository** (to deploy from GitHub or GitLab).
+
+   * **Docker Hub** (for container-based deployments).
+
+   * **Database** (for database-related CI/CD workflows).
+
+3. If using a repository:
+
+   * Choose **Repository Source** (GitHub, GitLab, etc.).
+
+   * Select **Organization** and **Repository**.
+
+   * Pick the **Branch** (e.g., `main`).
+
+4. Select a **Konstack** (predefined infrastructure configurations).
+
+5. Click **Continue**.
+
+![](https://api.monosnap.com/file/download?id=f558demMhWIvVvUvvzWOf25FWJuhbo)
+
+### **Step 4: Configuring the Pipeline (Step 2)**
+
+1. **Choose Build Settings**:
+
+   * **Build Method**: Select `Docker` or another method.
+
+   * **Build Command**: Enter a command or upload a script.
+
+   * **Docker Path**: Define the directory containing Dockerfiles.
+
+2. **Set Networking Options**:
+
+   * **Port**: Specify the application's port (e.g., `8080`).
+
+   * **Protocol**: Choose `TCP` or `UDP`.
+
+   * **Auto HTTPS & Public Access**: Enable or disable security settings.
+
+3. **Add Environment Variables**:
+
+   * Click **New Environment Variable** to securely pass configurations like API keys.
+
+4. **Define Lifecycle Commands**:
+
+   * These commands execute during different deployment stages.
+
+5. Click **Deploy Pipeline** to finalize the setup.
+
+![](https://api.monosnap.com/file/download?id=W0QVUnFjz5X4KSO15dNaRru2yQ4smR)
+
+### **Step 5: Monitoring Deployment**
+
+Once deployed, users can **track the pipeline’s execution** in real time.
+
+1. The **CI/CD Pipelines tab** will display:
+
+   * **Commit Reference** (latest commit triggering deployment).
+
+   * **Pipeline Status** (*In Progress, Completed, Failed*).
+
+   * **Job Execution Details** (active & pending jobs).
+
+![](https://api.monosnap.com/file/download?id=EOdJHXvtdnBZIc7EN01CA9iT9P9O7Y)
+
+1. **Viewing Logs for Each Job**:
+
+   * Expand a **job execution log** to see:
+
+     * Runner version and environment details.
+
+     * Installed dependencies (e.g., `Node.js, Yarn`).
+
+     * Execution timeline for each step.
+
+![](https://api.monosnap.com/file/download?id=MkU4rEIZvneoq2r3JTWGeUxsOZr5la)
+
+***
+
+##
