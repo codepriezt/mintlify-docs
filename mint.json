@@ -27,17 +27,12 @@
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Cloudsania Docs",
+      "url": "https://docs.cloudsania.com/"
     }
   ],
   "anchors": [
 
-    {
-      "name": "Cloudsania Docs",
-      "icon": "book-open-cover",
-      "url": "https://docs.cloudsania.com/"
-    },
     {
       "name": "Blog",
       "icon": "newspaper",
