@@ -35,7 +35,8 @@
 
     {
       "name": "Cloudsania Docs",
-      "icon": "book-open-cover"
+      "icon": "book-open-cover",
+      "url": "https://docs.cloudsania.com/"
     },
     {
       "name": "Blog",
