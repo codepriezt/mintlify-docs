@@ -16,6 +16,11 @@
     }
   },
   "topbarLinks": [
+
+    {
+      "name": "Blog",
+      "url": "https://blog.cloudsania.com/"
+    },
     {
       "name": "Support",
       "url": "mailto:help@cloudsania.com"
@@ -25,20 +30,7 @@
     "name": "Console",
     "url": "https://console.cloudsania.com/home"
   },
-  "tabs": [
-    {
-      "name": "Cloudsania Docs",
-      "url": "https://docs.cloudsania.com/"
-    }
-  ],
-  "anchors": [
-
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://blog.cloudsania.com/"
-    }
-  ],
+  
   "navigation": [
     {
       "group": "Home",
