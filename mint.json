@@ -32,6 +32,11 @@
     }
   ],
   "anchors": [
+
+    {
+      "name": "Cloudsania Docs",
+      "icon": "book-open-cover"
+    },
     {
       "name": "Blog",
       "icon": "newspaper",
