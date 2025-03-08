@@ -87,6 +87,13 @@
       "pages": [
         "scheduling"
       ]
+    },
+    {
+      "group": "settings",
+      "pages": [
+        "settings/ssh-key",
+        "settings/team"
+      ]
     }
   ],
   "footerSocials": {

@@ -1,0 +1,64 @@
+---
+title: "Create an SSH Key"
+description: "This guide will walk you through the steps on how to create an SSH key for logging into your virtual private server (VPS), "
+---
+
+<Note>
+  SSH keys provide a more secure way of logging into your virtual private server (VPS) without using passwords. This is an  particularly useful when configuring  cloud connectors like NameCheap on Cloudsania.
+</Note>
+
+## 🎯 How To Create an SSH Key
+
+### 1️⃣  **Navigate** to **the SSH Keys Section**
+
+&#x20;        ✅  Log in to **Cloudsania**.
+
+&#x20;        ✅  From the left sidebar, click on **Settings**.
+
+&#x20;        ✅  Select the **SSH Keys** tab to access the key management section.
+
+### 2️⃣   Enter  a unique 'Key name' for your SSH key&#x20;
+
+### 3️⃣  **Choose an SSH Key Type**
+
+Cloudsania offers different SSH key types based on security and performance needs:
+
+<AccordionGroup>
+  <Accordion title="SSH-ED25519 (Recommended) 🟣" defaultOpen={true} icon="key">
+    Provides the strongest security and efficiency.
+  </Accordion>
+
+  <Accordion title="SSH-ECDSA 🟠" defaultOpen={true} icon="key">
+    Faster than RSA, suitable for environments that require compliance with security standards.
+  </Accordion>
+
+  <Accordion title="SSH-RSA 🔵" defaultOpen={true} icon="key">
+    An older but widely supported encryption method.
+  </Accordion>
+</AccordionGroup>
+
+<Tip>
+  If you're unsure, select **SSH-ED25519** for optimal security.
+</Tip>
+
+![](https://api.monosnap.com/file/download?id=HR9XNOT7GnpwWlpE5xmwWl2B5JBW1r)
+
+![](https://api.monosnap.com/file/download?id=SjuamaI25fYmvM1EvMz6kkJSArdEY7)
+
+### &#x20;4️⃣  Click the "Create SSH Key" button to generate the key.
+
+&#x20;      Once created, the new key appears under 'Active SSH Key&#x73;**'**.
+
+📌 You can:
+
+✅  **Copy** the key’s fingerprint for later use.
+
+✅  **Download** the key to store it securely.
+
+✅  **Delete** any unused or outdated keys if necessary.
+
+![](https://api.monosnap.com/file/download?id=snNwsj8lauIcfz0iCPXUsCfPD3SkOD)
+
+## 🎯 **Using the SSH Key**&#x20;
+
+Your newly created SSH key can now be used for setting up cloud connectors like 'Namechea&#x70;**'**.
