@@ -11,68 +11,54 @@ description: "This guide will walk you through the steps on how to create an SSH
 
 ### 1️⃣  **Navigate** to **the SSH Keys Section**
 
-✅  Log in to **Cloudsania**.
+&#x20;        ✅  Log in to **Cloudsania**.
 
-✅  From the left sidebar, click on **Settings**.
+&#x20;        ✅  From the left sidebar, click on **Settings**.
 
-✅  Select the **SSH Keys** tab to access the key management section.
+&#x20;        ✅  Select the **SSH Keys** tab to access the key management section.
 
-### 2️⃣   Add a New SSH Key
+### 2️⃣   Enter  a unique 'Key name' for your SSH key&#x20;
 
-&#x20;        ✅  In the 'Key Nam&#x65;**'** field, enter a unique name for your SSH key (e.g., `namecheap-key`).
-
-### &#x20;3️⃣  **Choose an SSH Key Type**
+### 3️⃣  **Choose an SSH Key Type**
 
 Cloudsania offers different SSH key types based on security and performance needs:
 
-<Card title="New Card" icon="key">
-  Insert content here
-</Card>
+<AccordionGroup>
+  <Accordion title="SSH-ED25519 (Recommended) 🟣" defaultOpen={true} icon="key">
+    Provides the strongest security and efficiency.
+  </Accordion>
 
-* 📌 **SSH-ED25519 (Recommended)** 🟣
+  <Accordion title="SSH-ECDSA 🟠" defaultOpen={true} icon="key">
+    Faster than RSA, suitable for environments that require compliance with security standards.
+  </Accordion>
 
-  * 📌Provides the strongest security and efficiency.
+  <Accordion title="SSH-RSA 🔵" defaultOpen={true} icon="key">
+    An older but widely supported encryption method.
+  </Accordion>
+</AccordionGroup>
 
-* 📌 **SSH-ECDSA** 🟠
+<Tip>
+  If you're unsure, select **SSH-ED25519** for optimal security.
+</Tip>
 
-  * Faster than RSA, suitable for environments that require compliance with security standards.
+![](https://api.monosnap.com/file/download?id=HR9XNOT7GnpwWlpE5xmwWl2B5JBW1r)
 
-* 📌 **SSH-RSA** 🔵
+![](https://api.monosnap.com/file/download?id=SjuamaI25fYmvM1EvMz6kkJSArdEY7)
 
-  * An older but widely supported encryption method.
+### &#x20;4️⃣  Click the "Create SSH Key" button to generate the key.
 
-📌 **Tip:** If you're unsure, select **SSH-ED25519** for optimal security.
+&#x20;      Once created, the new key appears under 'Active SSH Key&#x73;**'**.
 
-### &#x20;4️⃣ 5️⃣ 6️⃣ 7️⃣ 8️⃣
+📌 You can:
 
-***
+✅  **Copy** the key’s fingerprint for later use.
 
-## **Step 3: Choose an SSH Key Type**
+✅  **Download** the key to store it securely.
 
-***
+✅  **Delete** any unused or outdated keys if necessary.
 
-## **Step 4: Generate and Store Your SSH Key**
+![](https://api.monosnap.com/file/download?id=snNwsj8lauIcfz0iCPXUsCfPD3SkOD)
 
-1. Click the **"Create SSH Key"** button to generate the key.
+## 🎯 **Using the SSH Key**&#x20;
 
-2. Once created, the new key appears under **Active SSH Keys**.
-
-3. You can:
-
-   * **Copy** the key’s fingerprint for later use.
-
-   * **Download** the key to store it securely.
-
-   * **Delete** any unused or outdated keys if necessary.
-
-***
-
-## **Step 5: Using the SSH Key**
-
-* Your newly created SSH key can now be used for setting up cloud connectors like **Namecheap**.
-
-* When configuring a connector, select the SSH key from the available options.
-
-✅ **Next Step:** Proceed with setting up your **Namecheap Cloud Connector** using the created SSH key.
-
-Would you like a guide on how to set up the Namecheap connector next? 🚀
+Your newly created SSH key can now be used for setting up cloud connectors like 'Namechea&#x70;**'**.
