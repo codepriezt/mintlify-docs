@@ -47,7 +47,7 @@
       ]
     },
     {
-      "group": "Cloud Service Providers",
+      "group": "☁️ Cloud Service Providers",
       "pages": [
         "cloud-service-providers/cloud-providers",
         "cloud-service-providers/aws",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "group": "settings",
+      "group": "Settings",
       "pages": [
         "settings/ssh-key",
         "settings/team"

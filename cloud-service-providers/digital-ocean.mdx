@@ -1,11 +1,11 @@
 ---
 title: "Digital Ocean"
-description: "This guide walks you through the step-by-step process of setting up a DigitalOcean Cloud Connector in Cloudsania."
+description: "This guide provides step-by-step instructions on how to set up a DigitalOcean Connector in Cloudsania."
 ---
 
-# **Setting Up Digital Ocean Cloud Connector**
+## ☁️🔗 **Setting Up Digital Ocean Cloud Connector**
 
-## 🔗 **Step 1: Navigate to Cloud Connectors**
+### ✅  Navigate to Cloud Connectors
 
 1️⃣  Log in to your [Cloudsania](https://console.cloudsania.com/auth/sign-in) account.
 
@@ -15,47 +15,45 @@ description: "This guide walks you through the step-by-step process of setting u
 
 ![](https://api.monosnap.com/file/download?id=13jrUFFw981q6nnqdBpgayQtDHMJGW)
 
-## 🔗**Step 2: Select Digital Ocean as the Cloud Provider**
+### ✅  **Select Digital Ocean as Your Cloud Provider.** &#x20;
 
 1️⃣  From the list of available cloud providers, select '**Digital Ocean'**.
 
 2️⃣  Click 'Confir&#x6D;***'*** to proceed.![](https://api.monosnap.com/file/download?id=N4uGFj0lywjAyU71LoqDBsZdkZwxt8)
 
-## 🔗**Step 3: Authorize Cloudsania to Access Your DigitalOcean Account**
+### ✅  **Authorize Cloudsania to Access Your DigitalOcean Account**
 
-Before Cloudsania can manage your DigitalOcean resources, you must authorize the application via **OAuth Authentication**.
+Before Cloudsania can manage your DigitalOcean resources, you must authorize the application via **OAuth Authentication.**
 
-### **Step 3.1: Log in to DigitalOcean**
+1️⃣  **Log in to DigitalOcean**
 
 1. Open a new tab and go to [**DigitalOcean**]().
 
-2. Enter your **DigitalOcean credentials** and log in.
+2. Enter your DigitalOcean credentials and log in.
 
-### **Step 3.2: Navigate to OAuth Applications**
+2️⃣  **Navigate to OAuth Applications**
 
-1. In your **DigitalOcean dashboard**, go to **API** in the left navigation panel.
+1. In your DigitalOcean dashboard, go to API in the left navigation panel.
 
-2. Click on the **OAuth Applications** tab.
+2. Click on the OAuth Applications tab.
 
-3. Click **Register a New Application**.
+3. Click Register a New Application.
 
-### **Step 3.3: Register Cloudsania as an OAuth Application**
+3️⃣  **Register Cloudsania as an OAuth Application**
 
 To allow Cloudsania to interact with your DigitalOcean account securely, you need to register it as an OAuth application.
 
-1. Click **Register New Application**.
-
-2. Enter the following details:
+1. Enter the following details:
 
    * **Application Name:** Cloudsania
 
    * **Redirect URL:** [`https://console.cloudsania.com/auth/callback`](https://console.cloudsania.com/auth/callback)
 
-   * **Permissions:** Select the required permissions for Cloudsania to manage your resources (e.g., read, write, and deploy resources).
+   * **Permissions:** Select the required permissions for Cloudsania to manage your resources (i.e, 'Read' and 'Write').
 
-3. Click **Save and Generate Credentials**.
+2. Click **Save and Generate Credentials**.
 
-### **Step 3.4: Copy OAuth Credentials**
+4️⃣ **Copy your OAuth Credentials**
 
 Once the application is registered, DigitalOcean will generate OAuth credentials for you.
 
@@ -63,38 +61,46 @@ Once the application is registered, DigitalOcean will generate OAuth credentials
 
 2. Store them securely, as they will be required in Cloudsania.
 
-## 🔗**Step 4: Enter Connector Details in Cloudsania**
+### ✅  **Provide  Your Connector Details in Cloudsania.**&#x20;
 
-1. Return to **Cloudsania**.
+1️⃣  Return to **Cloudsania**.
 
-2. Enter the **Connector Name** and **Account Name**.
+2️⃣  Enter the **Connector Name** and **Account Name**.
 
-3. Click **Continue**.
+3️⃣ Click **Continue**.
 
 ![](https://api.monosnap.com/file/download?id=Xb2prRoYN83wEZV1lsBaROqRGAiaCf)
 
-## 🔗**Step 5: Configure Connector Access**
+### ✅ **Configure Your Connector Access**
 
-1. Select OAuth Authentication (Recommended).
+1️⃣ Select OAuth Authentication (Recommended).
 
-2. Paste the **Client ID** and **Client Secret** from DigitalOcean.
+2️⃣ Paste the **Client ID** and **Client Secret** generated from DigitalOcean.
 
-3. Click 'Create'  and you will be redirected to Digital Ocean to authorize Cloudsania access.&#x20;
+3️⃣ Click **'Create'**  and you will be redirected to Digital Ocean to authorize Cloudsania access.&#x20;
 
 ![](https://api.monosnap.com/file/download?id=pLkimqzaH92jfjqJOmZwKGk2E8GlHb)
 
-## 🔗**Step 6: Authorize Cloudsania Access**
+### ✅ **Authorize Cloudsania Access**
 
-1. When prompted, review the permissions requested by Cloudsania.
+1️⃣  When prompted, review the permissions requested by Cloudsania.
 
-2. Ensure that '**Read'** and '**Write'** permissions are enabled.
+2️⃣  Ensure that '**Read'** and '**Write'** permissions are enabled.
 
-3. Select the team that should have access.
+3️⃣  Select the team that should have access.
 
-4. Click **Authorize Authorization** to grant access.
+4️⃣  Click **Authorize Authorization** to grant access.
 
-5. If successful, your DigitalOcean account will be linked to Cloudsania
+5️⃣  If successful, your DigitalOcean account will be linked to your Cloudsania account
 
-6. You will be redirected back to the **Cloudsania app,** where you can view your newly created Digital Ocean Connector.
+6️⃣  You will be redirected back to the **Cloudsania app,** where you can view your newly created Digital Ocean Connector.
+
+### ✅  Verify the Creation of Your DigitalOcean Connector
+
+📌 The DigitalOcean Connector will now appear in the **Cloud Connectors** list.
+
+📌 Confirm that the **Status** is marked as **Active**.
+
+Your DigitalOcean Connector is now successfully configured! 🎉
 
 You can now **deploy, monitor, and manage DigitalOcean resources** directly from Cloudsania.🚀

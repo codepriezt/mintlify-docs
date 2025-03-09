@@ -9,17 +9,17 @@ description: "The following guide walks through how to create, configure, and mo
 
 ## 🎯  How to Set Up CI/CD Pipelines
 
-### **Step 1: Navigate to the CI/CD Pipelines Page**
+### ✅  **Navigate to the CI/CD Pipelines Page**
 
-1. Navigate to Projects from the sidebar.
+&#x20;1️⃣   Navigate to Projects from the sidebar.
 
-2. Select your Project and the corresponding  Environment you want to initiate the setup for.
+&#x20;2️⃣  Select your Project and the corresponding  Environment you want to initiate the setup for.
 
-3. Click on the CI/CD Pipelines tab.
+&#x20;3️⃣   Click on the CI/CD Pipelines tab.
 
-4. If no pipelines exist, the screen will display an option to create one.
+&#x20;4️⃣   If no pipelines exist, the screen will display an option to create one.
 
-5. Click Create New Pipeline or Setup New CI/CD Pipeline to begin.
+&#x20;5️⃣  Click Create New Pipeline or Setup New CI/CD Pipeline to begin.
 
 ![](https://api.monosnap.com/file/download?id=4kTceMT7AHTIyuRduAgZA2HkTFnRem)
 
@@ -42,85 +42,83 @@ description: "The following guide walks through how to create, configure, and mo
   Once these prerequisites are met, you can proceed with setting up your **CI/CD Pipeline**.
 </Note>
 
-### **Step 1 : Setting Up a New CI/CD Pipeline (Step 1)**
+### ✅  **Setting Up a New CI/CD Pipeline**&#x20;
 
-1. Click **Setup New CI/CD Pipeline**.
+1️⃣  Click **Setup New CI/CD Pipeline**.
 
-2. Under **Source**, select:
+2️⃣  Under **Source**, select:
 
-   * **Linked Repository** (to deploy from GitHub or GitLab).
+* **Linked Repository** (to deploy from GitHub or GitLab).
 
-   * **Docker Hub** (for container-based deployments).
+* **Docker Hub** (for container-based deployments).
 
-   * **Database** (for database-related CI/CD workflows).
+* **Database** (for database-related CI/CD workflows).
 
-3. If using a repository:
+3️⃣  Choose 'Linked Respository'
 
-   * Choose **Repository Source** (GitHub, GitLab, etc.).
+* Choose **Repository Source** (GitHub, GitLab, etc.).
 
-   * Select **Organization** and **Repository**.
+* Select your **Organization** **Repository**.
 
-   * Pick the **Branch** (e.g., `main`).
+* Select your **Branch** (e.g., `main`).
 
-4. Select a **Konstack** (predefined infrastructure configurations).
+4️⃣  Select a **Konstack** (predefined infrastructure configurations).
 
-5. Click **Continue**.
+5️⃣  Click '**Continue'**
 
 ![](https://api.monosnap.com/file/download?id=f558demMhWIvVvUvvzWOf25FWJuhbo)
 
-### **Step 4: Configuring the Pipeline (Step 2)**
+### ✅  **Configuring the Pipeline**
 
-1. **Choose Build Settings**:
+1️⃣ **Choose Build Settings**:
 
-   * **Build Method**: Select `Docker` or another method.
+1. **Build Method**: Select `Docker`&#x20;
 
-   * **Build Command**: Enter a command or upload a script.
+2. **Build Command**: Enter a command or upload a script.
 
-   * **Docker Path**: Define the directory containing Dockerfiles.
+3. **Docker Path**: Define the directory containing `Dockerfile`.
 
-2. **Set Networking Options**:
+2️⃣  **Set Networking Options**:
 
-   * **Port**: Specify the application's port (e.g., `8080`).
+1. **Port**: Specify the application's port (e.g., `8080`).
 
-   * **Protocol**: Choose `TCP` or `UDP`.
+2. **Protocol**: Choose `TCP` or `UDP`.
 
-   * **Auto HTTPS & Public Access**: Enable or disable security settings.
+3. **Auto HTTPS & Public Access**: Enable or disable security settings.
 
-3. **Add Environment Variables**:
+3️⃣  **Add Environment Variables if available**:
 
-   * Click **New Environment Variable** to securely pass configurations like API keys.
+1. Click **New Environment Variable** to securely pass configurations like API keys.
 
-4. **Define Lifecycle Commands**:
+4️⃣  **Define Lifecycle Commands**:
 
-   * These commands execute during different deployment stages.
+1. These commands execute during different deployment stages.
 
-5. Click **Deploy Pipeline** to finalize the setup.
+5️⃣  Click **Deploy Pipeline** to finalize the setup.
 
 ![](https://api.monosnap.com/file/download?id=W0QVUnFjz5X4KSO15dNaRru2yQ4smR)
 
-### **Step 5: Monitoring Deployment**
+### ✅  **Monitoring Deployment**
 
-Once deployed, users can **track the pipeline’s execution** in real time.
+Once deployed, users can **track the pipeline’s execution** in real time.&#x20;
 
-1. The **CI/CD Pipelines tab** will display:
+1️⃣  The **CI/CD Pipelines tab** will display:
 
-   * **Commit Reference** (latest commit triggering deployment).
+1. **Commit Reference** (latest commit triggering deployment).
 
-   * **Pipeline Status** (*In Progress, Completed, Failed*).
+2. **Pipeline Status** (*In Progress, Completed, Failed*).
 
-   * **Job Execution Details** (active & pending jobs).
+3. **Job Execution Details** (active & pending jobs).
 
 ![](https://api.monosnap.com/file/download?id=EOdJHXvtdnBZIc7EN01CA9iT9P9O7Y)
 
-1. **Viewing Logs for Each Job**:
+2️⃣  **Viewing Logs for Each Job**: Expand a **job execution log** to see:
 
-   * Expand a **job execution log** to see:
+1. Runner version and environment details.
 
-     * Runner version and environment details.
+2. Installed dependencies (e.g., `Node.js, Yarn`).
 
-     * Installed dependencies (e.g., `Node.js, Yarn`).
-
-     * Execution timeline for each step.
+3. Execution timeline for each step.
 
 ![](https://api.monosnap.com/file/download?id=MkU4rEIZvneoq2r3JTWGeUxsOZr5la)
 
