@@ -47,16 +47,16 @@
       ]
     },
     {
-      "group": "☁️ Cloud Service Providers",
+      "group": " 🔗☁️ Cloud Connectors",
       "pages": [
-        "cloud-service-providers/cloud-providers",
-        "cloud-service-providers/aws",
-        "cloud-service-providers/digital-ocean",
-        "cloud-service-providers/name-cheap"
+        "cloud-connectors/cloud-providers",
+        "cloud-connectors/aws",
+        "cloud-connectors/digital-ocean",
+        "cloud-connectors/name-cheap"
       ]
     },
     {
-      "group": "Projects",
+      "group": "📦 Projects",
       "pages": [
         "projects/project-setup",
         "projects/app-service"
@@ -74,7 +74,7 @@
       ]
     },
     {
-      "group": "Integrations",
+      "group": " 🛠️ Integrations",
       "pages": [
         "integrations/github",
         "integrations/cloud-flare",
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "group": "Settings",
+      "group": "⚙️ Settings",
       "pages": [
         "settings/ssh-key",
         "settings/team"
