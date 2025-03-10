@@ -47,7 +47,7 @@
       ]
     },
     {
-      "group": " 🔗☁️ Cloud Connectors",
+      "group": " ☁️ Cloud Connectors",
       "pages": [
         "cloud-connectors/cloud-providers",
         "cloud-connectors/aws",
