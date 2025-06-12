@@ -1,0 +1,112 @@
+---
+title: "VPS Connector"
+description: "Comprehensive guide about VPS Connector in Cloudsania: Capabilities and Policies"
+---
+
+<Note>
+  Before diving in, make sure to check [Cloud Connectors Guide](/cloud-connectors/cloud-connectors) to learn about Cloud Connectors.
+</Note>
+
+## What is VPS Connector?
+
+The VPS Connector enables seamless integration between Cloudsania and your Virtual Private Server infrastructure, with support for VPS hosting like Namecheap. This connector allows you to manage server configurations, deploy applications, and handle various infrastructure components directly from the Cloudsania platform.
+
+## Features and Capabilities
+
+### Server Management
+- SSH-based secure server access
+- Automated server provisioning
+- Docker container management
+- Nginx web server configuration
+- Custom domain configuration
+
+### Authentication Methods
+<CardGroup>
+  <Card title="Password Authentication" icon="key">
+    **Basic Authentication**
+
+    -Username and password-based access
+
+    -Quick setup for testing
+
+    -Suitable for development environments
+  </Card>
+  <Card title="Public Key Authentication" icon="shield-check">
+    **Recommended**
+    - SSH key-based secure access
+    - Enhanced security
+  </Card>
+</CardGroup>
+
+### Add-ons Support
+<AccordionGroup>
+  <Accordion title="Database Services">
+    - MySQL (Port: 3306)
+    - PostgreSQL (Port: 5432)
+    - MongoDB (Port: 27017)
+    - Redis (Port: 6379)
+  </Accordion>
+  
+  <Accordion title="Message Queues">
+    - RabbitMQ (Ports: 5672, 15672)
+    - Advanced message queuing
+    - Management interface
+  </Accordion>
+
+  <Accordion title="Web Services">
+    - Nginx web server
+    - Custom domain configuration
+    - SSL/TLS support
+  </Accordion>
+</AccordionGroup>
+
+### Infrastructure Management
+- Docker container orchestration
+- Volume management for persistent data
+- Port management and exposure
+- Service health monitoring
+- Automated backups (container volumes)
+
+### Security Features
+- SSH key management
+- Secure credential storage
+- Least privilege access control
+- Automated security updates
+- Network security configuration
+
+
+
+### Data Persistence
+<AccordionGroup>
+  <Accordion title="Volume Management">
+    - mysql-data: /var/lib/mysql
+    - redis-data: /data
+    - mongodb-data: /data/db
+    - rabbitmq-data: /var/lib/rabbitmq
+  </Accordion>
+  
+  <Accordion title="Backup Support">
+    - Automated volume backups
+    - Container state persistence
+    - Data recovery options
+  </Accordion>
+</AccordionGroup>
+
+### Environment Configuration
+- Automated Docker installation
+- System package management
+- Service configuration
+- Network setup
+- SSL/TLS certificate management
+
+
+<Note>
+  The VPS Connector automatically handles server provisioning, container management, and security configurations to ensure a smooth deployment experience.
+</Note>
+
+### Ready to Setup Your VPS Connector?
+
+<Card title="Set Up VPS Connector?" icon="rocket" href="/how-to-guides/how-to-setup-vps-connector">
+  Follow our step-by-step guide to configure your VPS connector and start managing your infrastructure.
+</Card>
+

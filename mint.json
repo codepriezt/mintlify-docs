@@ -16,57 +16,90 @@
     }
   },
   "topbarLinks": [
-
-    {
-      "name": "Blog",
-      "url": "https://blog.cloudsania.com/"
-    },
     {
       "name": "Support",
-      "url": "mailto:help@cloudsania.com"
+      "url": "https://docs.cloudsania.com/help-and-support/contact-support-and-community",
+      "type": "link"
+    },
+    {
+      "name": "Web Console",
+      "url": "https://console.cloudsania.com/auth/sign-in",
+      "type": "link"
     }
   ],
   "topbarCtaButton": {
-    "name": "Console",
-    "url": "https://console.cloudsania.com/home"
+    "name": "Start 30-Day Trial",
+    "url": "https://console.cloudsania.com/auth/sign-up"
   },
-  
+  "primaryCta": {
+    "name": "Start 30-Day Trial",
+    "url": "https://console.cloudsania.com/auth/sign-up"
+  },
+  "secondaryBar": {
+    "name": "Web Console",
+    "url": "https://console.cloudsania.com/auth/sign-in"
+  },
+  "search": {
+    "prompt": "Search documentation...",
+    "placeholder": "Search...",
+    "containerId": "docsearch",
+    "buttonText": "Search",
+    "maxWidth": "400px"
+  },
+  "layout": "sidenav",
+  "css": ["css/styles.css"],
+  "modeToggle": {
+    "default": "light",
+    "isHidden": false
+  },
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
+  },
+  "templates": {
+    "default": "_template.mdx"
+  },
   "navigation": [
     {
       "group": "Home",
+      "pages": ["overview"]
+    },
+    {
+      "group": "Introduction",
       "pages": [
-        "overview"
+        "introduction/about-cloudsania",
+        "introduction/how-cloudsania-works",
+        "introduction/basic-concepts"
       ]
     },
     {
       "group": "Getting Started",
       "pages": [
-        "getting-started/introduction",
         "getting-started/account-setup",
-        "getting-started/cloud-connectors"
+        "getting-started/quick-start"
       ]
     },
     {
-      "group": " ☁️ Cloud Connectors",
+      "group": "Cloud Connectors",
       "pages": [
         "cloud-connectors/cloud-providers",
-        "cloud-connectors/aws",
-        "cloud-connectors/digital-ocean",
-        "cloud-connectors/name-cheap"
+        "cloud-connectors/cloud-connectors",
+        "cloud-connectors/aws-connector",
+        "cloud-connectors/digital-ocean-connector",
+        "cloud-connectors/vps-connector"
       ]
     },
     {
-      "group": "📦 Projects",
+      "group": "Project Management",
       "pages": [
         "projects/project-setup",
         "projects/app-service"
-      
       ]
     },
     {
-      "group": "Environments",
+      "group": "Environment Setup",
       "pages": [
-        "environments/environment-setup",
+        "environments/environments",
         "environments/konstacks",
         "environments/addons",
         "environments/dns-configurations",
@@ -74,7 +107,7 @@
       ]
     },
     {
-      "group": " 🛠️ Integrations",
+      "group": "Integrations",
       "pages": [
         "integrations/github",
         "integrations/cloud-flare",
@@ -83,23 +116,71 @@
       ]
     },
     {
-      "group": "Scheduling",
+      "group": "Deployment",
       "pages": [
-        "scheduling"
+        "deployments/cicd-pipelines",
+        "deployments/automatic-deployments",
+        "deployments/deployment-triggers"
       ]
     },
     {
-      "group": "⚙️ Settings",
+      "group": "How to Guides",
       "pages": [
-        "settings/ssh-key",
-        "settings/team"
+        "how-to-guides/how-to-setup-aws-connector",
+        "how-to-guides/how-to-setup-vps-connector",
+        "how-to-guides/how-to-setup-digitalOcean-connector",
+        "how-to-guides/how-to-create-a-project",
+        "how-to-guides/how-to-create-an-environment",
+        "how-to-guides/how-to-deploy-an-appservice",
+        "how-to-guides/how-to-deploy-a-konstack",
+        "how-to-guides/how-to-deploy-addons",
+        "how-to-guides/how-to-integrate-github",
+        "how-to-guides/how-to-integrate-cloudflare",
+        "how-to-guides/how-to-integrate-digitalOcean",
+        "how-to-guides/how-to-integrate-route53",
+        "how-to-guides/how-to-configure-DNS-records",
+        "how-to-guides/how-to-setup-a-cicd-pipeline",
+        "how-to-guides/how-to-trigger-an-automatic-deployment",
+        "how-to-guides/how-to-schedule-a-call"
+      ]
+    },
+    {
+      "group": "Account Settings",
+      "pages": [
+        "account-settings/ssh-key-setup",
+        "account-settings/team-management"
+      ]
+    },
+    {
+      "group": "Help and Support",
+      "pages": [
+        "help-and-support/schedule-a-call",
+        "help-and-support/contact-support-and-community",
+        "help-and-support/faqs",
+        "help-and-support/troubleshooting"
       ]
     }
   ],
-  "footerSocials": {
-    "twitter": "https://x.com/cloudsania",
-    "instagram": "https://www.instagram.com/cloudsania/?hl=en",
-    "linkedin": "https://linkedin.com/company/cloudsania",
-    "facebook": "https://web.facebook.com/cloudsania"
-  }
+  "footerSocials": [
+    {
+      "type": "website",
+      "url": "https://blog.cloudsania.com/"
+    },
+    {
+      "type": "x-twitter",
+      "url": "https://x.com/cloudsania"
+    },
+    {
+      "type": "instagram",
+      "url": "https://www.instagram.com/cloudsania/?hl=en"
+    },
+    {
+      "type": "linkedin",
+      "url": "https://linkedin.com/company/cloudsania"
+    },
+    {
+      "type": "facebook",
+      "url": "https://web.facebook.com/cloudsania"
+    }
+  ]
 }

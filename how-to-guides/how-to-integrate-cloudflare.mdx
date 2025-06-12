@@ -1,0 +1,175 @@
+---
+title: 'How to Integrate Cloudflare'
+description: 'Complete guide to integrating Cloudflare with Cloudsania for DNS management and security'
+---
+
+## Overview
+
+This guide explains how to integrate Cloudflare with Cloudsania, enabling you to manage DNS records, security settings, and CDN functionality directly from your Cloudsania dashboard.
+
+## Prerequisites
+
+- A Cloudsania account
+- Cloudflare account
+- Domain configured on Cloudflare
+- API token with appropriate permissions
+
+## Integration Steps
+
+### 1. Generate Cloudflare API Token
+
+1. Log in to Cloudflare Dashboard
+   - Go to **Profile**
+   - Navigate to **API Tokens**
+   - Click **Create Token**
+
+2. Configure Token Permissions
+   - Select **Edit** zone DNS
+   - Choose **Read** Analytics
+   - Add **Zone** Settings permissions
+   - Select specific zones or all zones
+
+3. Set Token Restrictions
+   - Configure IP address filtering
+   - Set TTL (Time To Live)
+   - Add client certificate requirements
+
+### 2. Configure Cloudsania Integration
+
+1. Access Integrations
+   - Log in to Cloudsania
+   - Navigate to **Integrations**
+   - Select **Cloudflare**
+
+2. Add Configuration
+   - Enter API token
+   - Select domains to manage
+   - Configure default settings
+
+3. Verify Connection
+   - Test API access
+   - Validate permissions
+   - Check domain access
+
+
+Integrating Cloudflare with Cloudsania enables seamless management of DNS records, security settings, and automated configurations. By linking your Cloudflare account, you can manage your Zones and create DNS records.
+
+<Note>
+  **Prerequisites**
+
+  Before enabling Cloudflare integration, ensure the following:
+
+  1. You have an **active Cloudflare account.**
+
+  2. You have generated an API token with the required permissions.
+
+  3. You have retrieved your Cloudflare Account ID.
+</Note>
+
+## <Icon icon="cloud-arrow-down" color="orange" iconType="solid" size={30} />  **Enable Cloudflare Integration in Cloudsania**
+
+<Steps>
+  <Step title="Navigate to the Integrations Page">
+    1. Log in to **Cloudsania** and navigate to Integrations from the sidebar.
+
+    2. Locate Clouflare in the list of available integrations.
+  </Step>
+
+  <Step title="Enable the Github Integration">
+    1. Toggle the Clouflare **switch** to activate the integration.
+
+    2. A confirmation pop-up will appear.
+
+    3. Click 'Confirm' to proceed with enabling the Cloudflare integration.
+
+    ![](https://api.monosnap.com/file/download?id=vnfpoIacLZRsum3MOoIG5eSmmpG68w)
+
+    ![](https://api.monosnap.com/file/download?id=GJduHciYdBtivygfHi1WPKYPjhcN32)
+  </Step>
+</Steps>
+
+## &#x20;<Icon icon="cloud-arrow-down" color="orange" size="30" iconType="solid" />  Generate a Cloudflare API Token
+
+To securely connect Cloudsania with Cloudflare, generate an API token.
+
+<Note>
+  Prerequisite
+
+  Before you begin, [find your zone and account IDs](https://developers.cloudflare.com/fundamentals/setup/find-account-and-zone-ids/).
+</Note>
+
+<Steps>
+  <Step title="Log in to your Cloudflare Dashboard.">
+    From the [Cloudflare dashboard ↗](https://dash.cloudflare.com/profile/api-tokens/), go to **My Profile** > **API Tokens** for user tokens. For Account Tokens, go to **Manage Account** > **API Tokens**.
+  </Step>
+
+  <Step title="Click Create Token and select Custom Token.">
+    ![](https://api.monosnap.com/file/download?id=R5DkCs7rdouqYRjCDNlsNtLZoKRCgM)
+  </Step>
+
+  <Step title="Set the Token Name (e.g., &#x22;Cloudsania API Token&#x22;)." />
+
+  <Step title="Add the following permissions:">
+    1. Zone → Zone Settings → Edit
+
+    2. Zone → Zone Settings → Read
+
+    3. Zone → Zone → Read
+
+    4. Zone → DNS → Read
+
+    5. Zone → Zone → Edit
+
+    6. Zone → DNS → Edit
+  </Step>
+
+  <Step title="Under Zone Resources, select Include All Zones." />
+
+  <Step title="(Optional) Restrict how the token is used in the Client IP Address Filtering and TTL (time to live) fields." />
+
+  <Step title="Select Continue to summary.">
+    ![](https://api.monosnap.com/file/download?id=LOwMM3wFFrIBnwg6yaMzd0QJjzVicC)![](https://api.monosnap.com/file/download?id=XWqurEJN30y2Y0LSvyYvvlYyW4RQF2)
+  </Step>
+
+  <Step title="Review the token summary. Select Edit token to make adjustments. You can also edit a token after creation." />
+
+  <Step title="Select Create Token to generate the token's secret.">
+    ![](https://api.monosnap.com/file/download?id=hyEXBA9ti66bGqTJC76VcvmoKktsy0)
+  </Step>
+
+  <Step title="Copy the secret to a secure place.">
+    <Warning>
+      Warning
+
+      The token secret is **only shown once**. Do not store the secret in plaintext where others can access it. Anyone with this token can perform the authorized actions against the resources that the token has access to.
+    </Warning>
+  </Step>
+</Steps>
+
+![](https://api.monosnap.com/file/download?id=apirL2P3aZX2C37XIYCfrDjAG5zDmn)
+
+## <Icon icon="cloud-arrow-down" color="orange" size="30" iconType="solid" />  **Configure Cloudflare Integration in Cloudsania**
+
+<Steps>
+  <Step title="Navigate to Integrations > Cloudflare > Setup Cloudflare Integration" />
+
+  <Step title="Enter your Cloudflare Account ID" />
+
+  <Step title="Paste the copied Cloudflare API Key" />
+
+  <Step title="Click 'Verify' to authenticate the connection">
+    You'll receive a success message upon successful integration
+  </Step>
+</Steps>
+
+![](https://api.monosnap.com/file/download?id=jHNvcp7EzlydF4I7hIuHOHFCbVTFsh)
+
+## <Icon icon="cloud-arrow-down" color="orange" size="30" iconType="solid" />  **Verify Cloudflare Integration Status**
+
+<Steps>
+  <Step title="Once verification is successful, Cloudsania will confirm the integration." />
+
+  <Step title="The Cloudflare Integration Toggle will turn ON, indicating a successful setup.">
+    ![](https://api.monosnap.com/file/download?id=R9RXu01lvWTfg2VDGVzFROKOVFpDot)
+  </Step>
+</Steps>

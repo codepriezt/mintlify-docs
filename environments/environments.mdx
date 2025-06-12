@@ -1,0 +1,102 @@
+---
+title: "Environments"
+description: "Understanding Environments in Cloudsania: Isolated spaces for your application infrastructure"
+---
+
+## What are Environments?
+
+<Note>
+  Environments in Cloudsania are isolated infrastructure spaces that represent different stages of your application lifecycle. Each environment is configured with its own set of resources, security policies, and access controls.
+</Note>
+
+## Environment Types
+
+<CardGroup>
+  <Card title="Development" icon="code">
+    - For building and testing
+    - Cost-optimized resources
+  </Card>
+  
+  <Card title="Staging" icon="vial">
+    - Pre-production testing
+    - Production-like setup
+    - Enhanced security
+  </Card>
+
+  <Card title="Production" icon="rocket">
+    - Live application hosting
+    - High availability
+    - Scalable resources
+    - Enhanced security
+  </Card>
+
+  <Card title="Demo" icon="display">
+    - Showcase features
+    - Sandboxed environment
+    - Quick setup/teardown
+    - Limited resource allocation
+  </Card>
+
+  <Card title="QA" icon="bug">
+    - Quality assurance testing
+    - Automated testing
+  </Card>
+
+  <Card title="Custom" icon="gear">
+    - User-defined setup
+    - Flexible configurations
+    - Custom resource allocation
+    - Specialized requirements
+  </Card>
+</CardGroup>
+
+## Environment Components
+
+Each environment consists of the following core components:
+
+### Infrastructure Resources
+<CardGroup>
+  <Card title="Compute" icon="server">
+    - EC2 instances
+    - ECS clusters
+    - Container services
+    - Auto-scaling groups
+  </Card>
+  
+  <Card title="Networking" icon="network-wired">
+    - VPC configuration
+    - Subnets (public/private)
+    - Security groups
+    - Load balancers
+  </Card>
+</CardGroup>
+
+### Storage & Database
+<CardGroup>
+  <Card title="Storage Solutions" icon="database">
+    - S3 buckets
+    - Block storage
+  </Card>
+  
+  <Card title="Database Services" icon="table">
+    - RDS instances
+    - Database clusters
+    - Caching layers
+  </Card>
+</CardGroup>
+
+## Environment Isolation
+
+Each environment maintains strict isolation through:
+- Separate VPC networks
+- Distinct security groups
+- Environment-specific IAM roles
+- Isolated database instances
+
+<Card
+  title="Create Your First Environment"
+  icon="plus"
+  href="/how-to-guides/how-to-create-an-environment"
+>
+  Learn how to create and configure environments for your project
+</Card>

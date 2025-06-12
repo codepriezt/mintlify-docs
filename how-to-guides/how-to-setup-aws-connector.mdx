@@ -1,0 +1,164 @@
+---
+title: 'How to Set Up AWS Connector'
+description: 'Complete guide to configuring AWS cloud connector in Cloudsania'
+---
+
+## Overview
+
+This guide walks you through setting up an AWS connector in Cloudsania, enabling you to manage your AWS resources efficiently.
+
+
+## Prerequisites
+
+This guide assumes you have the following:
+- Access to the Cloudsania platform
+- AWS account access
+- Basic understanding of AWS services
+
+## **Setting Up AWS Cloud Connector**
+
+### Video Tutorial: Setting Up AWS Connector
+
+<iframe
+  src="https://player.vimeo.com/video/1079076944?h=03ac348728"
+  width="100%"
+  height="400"
+  frameBorder="0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+### ✅  Navigate to Cloud Connectors
+
+1️⃣  Log in to your [Cloudsania](https://console.cloudsania.com/auth/sign-in) account.
+
+2️⃣  Click on **Cloud Connectors** from the left navbar.
+
+3️⃣  Click the **New Connector** button.
+
+![No Connectors Setup](/images/aws-connector/empty-connector-state.png)
+
+### ✅  **Select AWS as your Cloud Provider.** &#x20;
+
+1️⃣  From the list of available cloud providers, select '**AWS'**.
+
+2️⃣  Click **'Confir&#x6D;*'*** to proceed.
+
+### ✅ Provide Your Connector Details
+
+1️⃣ Enter Your Connector Name
+
+2️⃣ Select your AWS Regions from the list of regions. You'll get a dropdown to choose your desired  AWS Regions.
+
+![](/images/aws-connector/select-aws-connector.png)
+
+### ✅ Choose Your Development Type
+
+Choose the appropriate access privileges (Default Access or Least Privilege Access)&#x20;
+
+1️⃣  **Default Access**- Allows Cloudsania to scan your resources and automatically include future capabilities (**Highly recommended**)
+
+2️⃣   **Least Privilege Access**- Grants Cloudsania access only to the current permissions needed for the selected konstack.
+
+
+### ✅ **Configure Your Connector** for Default Access
+
+1️⃣  Choose **Default Access (Recommended)** to allow Cloudsania to scan your resources and automatically include future capabilities.
+
+2️⃣  Click the **CloudFormation Launch template** link provided in the setup.
+
+3️⃣  This will navigate you to AWS CloudFormation in your AWS account.
+
+![](/images/aws-connector/configure-connector-access.png)
+
+### ✅  Create CloudFormation Stack
+
+In AWS CloudFormation:
+
+1️⃣  The **template source and** **Amazon S3 URL will be preselected**
+
+2️⃣  **The** **Amazon S3 URL** will be provided in the field.
+
+3️⃣   Simply click '**Next'** to proceed.
+
+![](/images/aws-connector/create-cloudformation-stack.png)
+
+4️⃣ Specify Stack Details by providing the **Stack Name**, e.g., `aws-connector-stack`
+
+5️⃣ Click '**Next'**
+
+![](/images/aws-connector/specify-stack-name.png)
+
+6️⃣  Configure Stack Options(Optional) such as:
+
+* **Tags**
+
+* **IAM Role**
+
+* **Stack failure options**
+
+
+7️⃣  Review all Configurations and click '**Submit'** to create the stack.&#x20;
+
+
+8️⃣  Monitor Stack Creation - The stack will begin deploying. Wait until the status changes to **`CREATE_COMPLETE`**
+
+![](/images/aws-connector/successful-stack-creation.png)
+
+9️⃣  Once the stack is successfully created, Click on '**Outputs**.
+
+🔟  Copy the generated keys and store them securely:
+
+📌 Access Key ID
+
+📌 Secret Access Key
+
+📌 AWS Account ID
+
+![](/images/aws-connector/stack-output.png)
+
+### ✅ Return to the Cloudsania AWS Connector setup (Enter Keys)
+
+Return to the Cloudsania AWS Connector setup.
+
+1️⃣  Paste your **AWS Account ID**, **Access Key**, and **Secret Key** in the provided fields
+
+2️⃣  Click **Create**.
+
+
+### ✅  Verify the Creation of Your AWS Connector on Cloudsania
+
+📌 The AWS Connector will now appear in the **Cloud Connectors** list.
+
+📌 Confirm that the **Status** is marked as **Active**.
+
+Your AWS Connector is now successfully configured! 🎉
+
+![](/images/aws-connector/aws-connectors.png)
+
+
+### ✅  Verify the Creation of IAM users on your AWS account
+
+![](/images/aws-connector/aws-iam-users.png)
+
+This allows Cloudsania to integrate seamlessly with your AWS account, enabling streamlined automation and cloud management. 🚀
+
+## Troubleshooting
+
+Common issues and solutions:
+- Authentication failures
+- Permission errors
+- Region availability
+- Service limits
+
+## Best Practices
+
+1. Security
+   - Use IAM roles when possible
+   - Regular security reviews
+   - Enable MFA for root account
+
+2. Organization
+   - Clear naming conventions
+   - Resource tagging
+   - Documentation maintenance

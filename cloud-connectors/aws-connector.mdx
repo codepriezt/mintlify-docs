@@ -1,0 +1,176 @@
+---
+title: 'AWS Connector'
+description: 'Comprehensive guide about AWS Connector in Cloudsania: Capabilities and Policies'
+---
+
+<Note>
+  Before diving in, make sure to check [Cloud Connectors Guide](/cloud-connectors/cloud-connectors) to learn about Cloud Connectors.
+</Note>
+
+## What is AWS Connector?
+
+The AWS Connector in Cloudsania is a secure bridge between your Cloudsania account and AWS infrastructure. It enables automated operations on your AWS resources, including provisioning infrastructure, managing workloads, and monitoring cloud environments. This integration reduces complexity, enhances security, and optimizes operational efficiency.
+
+
+## Key Features and Capabilities
+
+<Tabs>
+  <Tab title="Secure Authentication">
+    ### Authentication & Security
+    <AccordionGroup>
+      <Accordion title="IAM Integration" defaultOpen={true}>
+        - Secure IAM user creation and management
+        - Role-based access control (RBAC)
+        - Policy-based permissions
+      </Accordion>
+      <Accordion title="Data Security">
+        - End-to-end encryption for data in transit
+        - Secure credential management
+        - No storage of raw AWS credentialss
+      </Accordion>
+
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Resource Management">
+    ### Resource Operations
+    <AccordionGroup>
+      <Accordion title="Infrastructure Management" defaultOpen={true}>
+        - Automated resource provisioning
+        - Infrastructure as Code support
+        - Multi-region resource support
+      </Accordion>
+      <Accordion title="Workload Management">
+        - Application deployment automation
+        - Container orchestration
+        - Service scaling
+        - Load balancing
+      </Accordion>
+    
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+
+### AWS IAM Policies
+
+<Info>
+  The AWS Connector supports two access models to match your security requirements and operational needs.
+</Info>
+
+<CardGroup cols={2}>
+  <Card title="Default Access" icon="shield-check">
+    **Recommended for most users**
+
+     -Full access to monitor and manage all resources.
+
+     -Permission to manage security configurations.
+     
+  </Card>
+  <Card title="Least Privilege" icon="shield-halved">
+    **For restricted access**
+
+    -Restricted to specific resources.
+
+    -Limited to required permissions only.
+
+
+  </Card>
+</CardGroup>
+
+### Required AWS Permissions
+
+<CodeGroup>
+```json Default Access
+
+{
+    "Effect": "Allow",
+    "Action": [
+        "s3:ListBucket",
+        "s3:GetObject",
+        "s3:CreateBucket",
+        "s3:GetBucketLocation",
+        "iam:Get*",
+        "iam:List*",
+        "iam:CreateUser",
+        "iam:CreatePolicy",
+        "iam:AttachUserPolicy",
+        "iam:PutUserPolicy",
+        "iam:CreateAccessKey"
+    ],
+    "Resource": "*"
+}
+```
+
+```json Least Privilege
+
+```
+</CodeGroup>
+
+## Changes to Your AWS Account
+
+<Warning>
+  When setting up an AWS Connector, several changes are made to your AWS account. Understanding these changes is crucial for security and compliance.
+</Warning>
+
+## IAM Users Created
+
+When you set up an AWS Connector, Cloudsania creates several IAM users in your AWS account to handle different aspects of automation and management. Each user has specific responsibilities and permissions aligned with the principle of least privilege.
+
+<Tabs>
+  <Tab title="Default Access Connector">
+    ### cloudsania-default-access-connector
+
+    - Main connector that manages overall AWS account access
+    - Handles core account-level operations
+    - Manages other connector permissions
+    - Controls global AWS configurations
+
+    **Access Level:** Default access with administrative capabilities
+  </Tab>
+
+  <Tab title="Dev Setup Connector">
+    ### cloudsania-dev-setupaccess-connector
+
+    - Handles infrastructure provisioning in development environments
+    - Manages development-specific resources
+    - Executes development environment workflows
+
+    **Access Level:** Least-Access
+  </Tab>
+
+  <Tab title="Prod Setup Connector">
+    ### cloudsania-prod-setupaccess-connector
+
+    - Handles infrastructure provisioning in production environments
+    - Manages production-specific resources
+    - Executes production environment workflows
+
+
+    **Access Level:** Least-Access 
+  </Tab>
+
+  <Tab title="Route53 Connector">
+    ### cloudsania-route53-connector
+
+    **DNS Management Connector**
+    - Handles DNS configurations and management
+    - Manages Route53 specific operations
+    - Executes DNS-related tasks
+
+    **Access Level:** Least-Access
+  </Tab>
+</Tabs>
+
+
+<Note>
+  Each connector is created with the minimum required permissions following AWS security best practices. The permissions are scoped to specific services and actions needed for their designated responsibilities.
+</Note>
+
+### Ready to Setup Your AWS Connector?
+
+<CardGroup cols={2}>
+  <Card title="Setup AWS Connector" icon="bolt" href="/how-to-guides/how-to-setup-aws-connector">
+    Get started with AWS Connector setup
+  </Card>
+</CardGroup>
