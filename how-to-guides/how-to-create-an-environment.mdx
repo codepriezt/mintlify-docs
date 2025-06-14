@@ -1,21 +1,20 @@
 ---
-title: 'How to Create an Environment'
-description: 'Step-by-step guide to creating and configuring environments in Cloudsania'
+title: 'How to Setup an Environment'
+description: 'Step-by-step guide to setting up an Environment'
 ---
 
 ## Overview
 
 This guide walks you through the process of creating and configuring an environment in Cloudsania. Environments are isolated spaces where you can deploy and manage your applications.
 
-## Prerequisites
+<Note>
+  **Prerequisites**
+  1. You have a Project create using Deverloper or Professional mode.
 
-Before you begin, ensure you have:
-- A Cloudsania account
-- A Project
-- Appropriate permissions to create an environment
-- Cloud provider connection
+  2. You have an active [Cloud Connector](/cloud-connectors/cloud-connectors)
+</Note>
 
-## Video Tutorial: Creating an Environment in Cloudsania
+#### Video Tutorial: Creating an Environment in Cloudsania
 
 <iframe
   src="https://player.vimeo.com/video/1079143976?h=1d70f6b4b7"
@@ -26,92 +25,59 @@ Before you begin, ensure you have:
   allowFullScreen
 ></iframe>
 
-## Step-by-Step Guide
-
-### Step 1: Select Your Project
+#### Step-by-Step Guide
 
 1. Navigate to the 'Projects' module from the side nav bar
-2. Locate the project you want to configure an environment for
+2. Locate the project you want to create an environment for
 3. Click on the 'view' icon next to the project name to access the project details
 
 ![Project Selection](https://api.monosnap.com/file/download?id=RAH5MnbY5xswcUa9M9eOOp7vlgfQss)
 
-### Step 2: Create a New Environment
-
-1. Inside the project details page, click 'New Environment'
-2. Alternatively, if no environments exist, click 'Create New Environment'
+4. On the project details page, click 'New Environment' button
 
 ![Create Environment](https://api.monosnap.com/file/download?id=Imt33B1nTobuNTqfb0PAlvH9JX9fKz)
 
-### Step 3: Select the Environment Type
+5. Select your preferred Environment from the list of [pre-configured environments](/environments/environments#environment-types):
 
-1. Choose a Pre-configured Environment from the dropdown:
-   - Dev Environment – Suitable for development and testing purposes
-   - Prod Environment – Used for production deployments
-   - Demo Environment – A sandboxed setup for showcasing features
-   - QA Environment – Dedicated to quality assurance and testing
-   - Create Custom Environment – Allows defining custom environment settings
-
-2. Click 'Continue' to proceed
+6. Click 'Continue' to proceed
 
 ![Environment Type](https://api.monosnap.com/file/download?id=hR9kdxvQUTt7zSCEKUaaNF10U8qVTm)
 
-### Step 4: Define Environment Settings
+7. Define your Environment Settings
+  
+    - Set the Visibility Scope:
+      - Public – Accessible to a wider audience or team
+      - Private – Restricted to specific users or internal teams
 
-1. Set the Visibility Scope:
-   - Public – Accessible to a wider audience or team
-   - Private – Restricted to specific users or internal teams
+    - Choose your preferred Cloud Provider: If "AWS", select your AWS Region
 
-2. Choose the Cloud Provider:
-   - AWS
-   - NameCheap
-   - Digital Ocean
-
-3. Select the Region:
-   - N. Virginia
-   - Ohio
-   - N. California
-   - Oregon
-   - Canada
-   - Stockholm
-   - Ireland
-   - London
-
-4. Click 'Continue' to proceed
+8. Click 'Continue' to proceed
 
 ![Environment Settings](https://api.monosnap.com/file/download?id=xdGwk47f8Vn2v823KLnc5rZgSQcf1A)
 
-### Step 5: Choose a Cloud Connector
+9. Select your active Cloud Connector
 
-1. Select an existing Cloud Connector (e.g., AWS Connector)
-2. Click 'Finish Setup' to complete the environment creation
+10. Click the "Finish Setup" button to complete the environment setup.
 
 ![Cloud Connector](https://api.monosnap.com/file/download?id=m6RI54b89ff8PAx6BzzS8nWXKYjyQs)
 
-### Step 6: Manage Your Environment
+11. Your environment will appear on the "Environments" page.
 
-Once created, your environment will appear under the 'Environments' section. Click 'View Environment' to access:
+### Next Steps
 
-- Konstacks – Infrastructure components such as EC2, ECS instances
-- Addons – Infrastructure components
-- CI/CD Pipelines – Continuous integration and deployment workflows
-- DNS Configuration – Manage domain and networking settings
-- Monitoring & Logging – Track and analyze system performance (Coming Soon🚀)
-- Alarms and Incidents – Configure alerts and notifications (Coming Soon🚀)
-- Security Scans – Assess security vulnerabilities (Coming Soon🚀)
+  Click 'View Environment' to access your Environment to begin provisioning your infrastructure. 
 
-![Environment Management](https://api.monosnap.com/file/download?id=3pRApA9yDCkBAimjDvyoTDW7hN5QnB)
-
-## Advanced Configuration
-
-### CI/CD Integration
-- Pipeline setup
-- Deployment configuration
-- Automation rules
-
-### Custom Domains
-- DNS management
-- SSL certificates
-- Domain validation
-
-<Feedback pageUrl="/how-to-guides/how-to-create-an-environment" />
+<CardGroup cols={2}>
+      <Card
+        title="Deploy a Konstack"
+        icon="rocket"
+        href="/how-to-guides/how-to-deploy-a-konstack"
+      >
+      </Card>
+      <Card
+        title="Set up CI/CD Pipeline"
+        icon="cicd"
+        href="/how-to-guides/how-to-setup-a-cicd-pipeline"
+      >
+      </Card>
+    </CardGroup>

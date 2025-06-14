@@ -31,14 +31,6 @@
     "name": "Start 30-Day Trial",
     "url": "https://console.cloudsania.com/auth/sign-up"
   },
-  "primaryCta": {
-    "name": "Start 30-Day Trial",
-    "url": "https://console.cloudsania.com/auth/sign-up"
-  },
-  "secondaryBar": {
-    "name": "Web Console",
-    "url": "https://console.cloudsania.com/auth/sign-in"
-  },
   "search": {
     "prompt": "Search documentation...",
     "placeholder": "Search...",
@@ -54,7 +46,8 @@
   },
   "feedback": {
     "suggestEdit": true,
-    "raiseIssue": true
+    "raiseIssue": true,
+    "rating": true
   },
   "templates": {
     "default": "_template.mdx"
@@ -85,14 +78,13 @@
         "cloud-connectors/cloud-providers",
         "cloud-connectors/cloud-connectors",
         "cloud-connectors/aws-connector",
-        "cloud-connectors/digital-ocean-connector",
         "cloud-connectors/vps-connector"
       ]
     },
     {
       "group": "Project Management",
       "pages": [
-        "projects/project-setup",
+        "projects/project-in-cloudsania",
         "projects/app-service"
       ]
     },
@@ -102,8 +94,7 @@
         "environments/environments",
         "environments/konstacks",
         "environments/addons",
-        "environments/dns-configurations",
-        "environments/cicd-pipelines"
+        "environments/dns-configurations"
       ]
     },
     {
@@ -118,9 +109,8 @@
     {
       "group": "Deployment",
       "pages": [
-        "deployments/cicd-pipelines",
-        "deployments/automatic-deployments",
-        "deployments/deployment-triggers"
+        "deployments/cicd-pipelines"
+      
       ]
     },
     {
@@ -128,7 +118,6 @@
       "pages": [
         "how-to-guides/how-to-setup-aws-connector",
         "how-to-guides/how-to-setup-vps-connector",
-        "how-to-guides/how-to-setup-digitalOcean-connector",
         "how-to-guides/how-to-create-a-project",
         "how-to-guides/how-to-create-an-environment",
         "how-to-guides/how-to-deploy-an-appservice",
@@ -140,7 +129,6 @@
         "how-to-guides/how-to-integrate-route53",
         "how-to-guides/how-to-configure-DNS-records",
         "how-to-guides/how-to-setup-a-cicd-pipeline",
-        "how-to-guides/how-to-trigger-an-automatic-deployment",
         "how-to-guides/how-to-schedule-a-call"
       ]
     },
@@ -156,8 +144,7 @@
       "pages": [
         "help-and-support/schedule-a-call",
         "help-and-support/contact-support-and-community",
-        "help-and-support/faqs",
-        "help-and-support/troubleshooting"
+        "help-and-support/faqs"
       ]
     }
   ],

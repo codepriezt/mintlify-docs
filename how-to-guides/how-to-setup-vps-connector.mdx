@@ -1,185 +1,74 @@
 ---
-title: 'How to Set Up VPS Connector'
-description: 'Complete guide to configuring VPS (Virtual Private Server) connector in Cloudsania'
+title: 'How to Set Up Virtual Servers Connector'
+description: 'Step-by-step guide to setting up Virtual Servers connector in Cloudsania'
 ---
 
 ## Overview
 
-This guide explains how to set up and configure a VPS connector in Cloudsania, allowing you to manage virtual private servers across different providers.
+This guide explains how to set up and configure a [Virtual Servers connector](/cloud-connectors/vps-connector#authentication-methods) in Cloudsania, allowing you to manage virtual private servers across different providers.
 
-## Prerequisites
+<Note>
+  **Prerequisites**
 
-- A Cloudsania account
-- VPS provider account
-- SSH key pair
-- Server credentials
+  1. You have an active Virtual Private Server (VPS)
+  2. Valid SSH key
+   server credentials
+</Note>
 
-## [](https://docs.cloudsania.com/cloud-service-providers/namecheap#step1-setup-your-virtual-private-server)🔗**Step 1 : S**etup Your Virtual Private Server
+## Setting Up a Virtual Servers Connector
 
-<Steps>
-  <Step title="Purchase a Virtual Private Server (VPS)  Plan">
-    * Log in to your [**Namecheap**](https://www.namecheap.com/) account and navigate to **Hosting**. Select **VPS Hosting** from the drop-down list.
+1. On the side navbar, click on "Cloud Connnectors".
 
-    <img height="1633" width="2877" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252F48F9T2OOwdcbE2F68LPf%252FScreenshot%25202024-10-06%2520at%252005.28.37.png%3Falt%3Dmedia%26token%3Dd7d0a162-0d8d-48ff-9c6d-92825c3462b1&width=768&dpr=4&quality=100&sign=936cf1b0&sv=2" />
+2. Click on "New Connector" button on the Cloud Connector Page.
 
-    * **Purchase a VPS hosting plan that best suits your organisation's needs.**
+![](/images/aws-connector/no-connector-state.png)
 
-    <img height="1633" width="2877" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252F48F9T2OOwdcbE2F68LPf%252FScreenshot%25202024-10-06%2520at%252005.28.37.png%3Falt%3Dmedia%26token%3Dd7d0a162-0d8d-48ff-9c6d-92825c3462b1&width=768&dpr=4&quality=100&sign=936cf1b0&sv=2" />
-  </Step>
+3. Select the "Virtual Servers" option from the list of cloud providers displayed and click on the "Confirm" button.
 
-  <Step title="Access Your Namecheap Account Dashboard">
-    * In your Namecheap account, navigate to the **Virtual server hosting list. Find your VPS and click manage.**
+![](/images/vps-connector/vps.connector-option.png) 
 
-    ![](https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252F8fV54kfMDMTng7Eg2vo0%252Fimage.png%3Falt%3Dmedia%26token%3Dc7944448-5cca-4977-8b8d-f20e0a9a509b\&width=768\&dpr=4\&quality=100\&sign=6f656406\&sv=2)
+4. Provide Your Connector Details.
+   - Enter Your Connector Name.
+   - Select your environment from the dropdown list.
+   - Specify your VPS Host and Port
+   - Click on the "Continue" button
 
-    * Here, you'll find a centralized interface showing the details and specifications of your VPS. You can control and monitor various aspects of your VPS without needing to access the server's command line directly.
-  </Step>
-</Steps>
+![](/images/vps-connector/vps-connector-details.png) 
 
-### ![](https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252Fg0yHYdBqRfI9G9WaCuIf%252Fnew_image.png%3Falt%3Dmedia%26token%3D201c755e-8a80-48a1-b7f5-5ebc56964baf\&width=768\&dpr=4\&quality=100\&sign=9543a464\&sv=2)
+5. Configure Your Connector Access. Choose your preferred [connector authentication type](/cloud-connectors/vps-connector#authentication-methods).
 
-### [](https://docs.cloudsania.com/cloud-service-providers/namecheap#step2-connect-namecheap-to-cloudsania)&#xA;🔗 **Step2: Connect Namecheap to Cloudsania:**
 
-Navigate to the Cloud Connectors section and click 'New Connector'.
+<Tabs>
+    <Tab title="Public Key Authentication (Recommended)">
 
-<Steps>
-  <Step title="Select Namecheap from the list of cloud service providers" />
+    Grant Cloudsania access to your VPS server using public key authentication flow.
 
-  <Step title="Provide Your Connector Details">
-    ![](https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FCcZeYs3QXz3Fmw8Cb3gY%252Fimage.png%3Falt%3Dmedia%26token%3D633b5206-eba6-430b-b5a3-f43c6bb382ae\&width=768\&dpr=4\&quality=100\&sign=d6b6cd2f\&sv=2)
-  </Step>
+    6. Enter your VPS Username
 
-  <Step title="Configure connector access">
-    #### 📌  **Step 1: Choose** **Connector Authentication Type**
+    7. Click on the dropdown to choose your public key- You can create an [SSH key](/account-settings/ssh-key-setup) if none exist for your organisation.
 
-    &#x20; There are two types of connector authentication, choose your preferred type:
+    8. Click on the "Create" button
 
-    Choose your preffered connector authentication type.
+    ![](/images/vps-connector/public-key-authentication.png) 
 
-    <Tabs>
-      <Tab title="Password Based Authentication">
-        Grant Cloudsania access to your VPS server using the SSH password authentication flow.
+9. Upon successful creation, your VPS connector will now appear on the "Cloud Connectors" page and the status marked as "Active"
 
-        <Info>
-          For this, you’ll need th&#x65;**`root username` and `password`**, which is usually provided by Namecheap in your welcome email. The default username is often, **`root`**&#x61;nd you will be able to change or create new usernames after logging in.
-        </Info>
+Your Virtual Server Connector is now successfully configured and ready for use! 🎉
 
-        #### 📌 Steps on how to create a new user and password and disable root user login
+    </Tab>
 
-        * Log in to your VPS as root and create a new user via the terminal
+    <Tab title="Password Based Authentication">
+    Grant Cloudsania access to your VPS server using the SSH password authentication flow.
 
-        ```bash
-        ssh root@your_server_ip
-        ```
+    6. Enter your VPS Username and Password in the relevant fields
 
-        * Add a new user: Replace new\_username with the username you want
+    7. Click on the "Create" button
 
-        ```bash
-        adduser newusername
-        ```
+    ![](/images/vps-connector/password-authentication.png) 
 
-        * Set a password for the new user:
+8. Upon successful creation, your VPS connector will now appear on the "Cloud Connectors" page and the status marked as "Active"
 
-        ```bash
-        codepasswd newusername
-        ```
+Your Virtual Server Connector is now successfully configured and ready for use! 🎉
 
-        * Add the new user to the sudo group to assign administrative privileges so they can execute commands with elevated  privileges:
-
-        ```bash
-        bashCopy codeusermod -aG sudo newusername
-        ```
-
-        Now that we have successfully created a user, we process to the next step&#x20;
-
-        📌Disable Root SSH Login:
-
-        To improve security, it’s a good practice to disable root SSH login.&#x20;
-
-        * Open the SSH configuration file:
-
-        ```bash
-        nano /etc/ssh/sshd_config
-        ```
-
-        * Find the line that says PermitRootLogin and change it to:
-
-        ```bash
-        PermitRootLogin no
-        ```
-
-        * Change the SSH Port:
-
-        While you are editing the SSH configuration file (/etc/ssh/sshd\_config), change the SSH port from the default 22 to your preferred port (e.g  Port 2222)
-
-        * Restart the SSH Service:
-
-        After making the changes, save and close the file, then restart the SSH service to apply the changes:
-
-        ```bash
-        systemctl restart ssh
-        ```
-
-        Allow the New SSH Port Through the Firewall:
-
-        If you are using a firewall, make sure to allow the new SSH port:&#x20;
-
-        * For UFW:
-
-        ```bash
-        ufw allow 2222/tcp
-        ```
-
-        * Find the line that says PermitRootLogin and change it to:
-
-        ```bash
-        PermitRootLogin no
-        ```
-
-        <Note>
-          Make sure to replace 2222 with the port number you selected.
-        </Note>
-
-        Test SSH with the New User and Port:&#x20;
-
-        Note: Before logging out of the root session, open a new terminal and test SSH access with the new user and port:
-
-        ```bash
-        ssh -p new_port new_username@your_vps_ip
-        ```
-
-        Disable Root Login Completely (Optional):&#x20;
-
-        Once you are able to log in with the new user and new port, you can disable root access altogether: Open the /etc/ssh/sshd\_config file again and ensure these lines are present:
-
-        * Open the /etc/ssh/sshd\_config file again and ensure these lines are present:
-
-        ```bash
-        PermitRootLogin no
-        ```
-
-        * <u>Restart</u> SSH service again:
-
-        ```bash
-        systemctl restart ssh
-        ```
-
-        ### **Step 2: Configure Connector Access Based on Preferred Connector Authentication Type**
-
-        ✅ Password Based Authentication
-
-        * Enter VPS Username (Host of the virtual private server Username)
-
-        * Enter VPC Password (Password of the virtual private server user)
-
-        * Click create
-
-        <img height="1578" width="2870" src="https://docs.cloudsania.com/~gitbook/image?url=https%3A%2F%2F1443322201-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252F9D0JTnpRisktkAiaEL7H%252Fuploads%252FRF4H3MnvrYEEbEV0CFuX%252Fimage.png%3Falt%3Dmedia%26token%3D95159fdf-e825-4a93-ab87-d6a2cb15e6b5&width=768&dpr=4&quality=100&sign=3e00fe41&sv=2" />
-
-        After successfully creating your **NameCheap connecto**r, you will be navigated to the **Connector** page to view and manage **the setup connector.**
-      </Tab>
-
-      <Tab title="Public Key Authentication (Recommended)" />
-    </Tabs>
-  </Step>
-</Steps>
+    </Tab>
+</Tabs>

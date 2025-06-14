@@ -26,7 +26,7 @@ The AWS Connector in Cloudsania is a secure bridge between your Cloudsania accou
       <Accordion title="Data Security">
         - End-to-end encryption for data in transit
         - Secure credential management
-        - No storage of raw AWS credentialss
+        - No storage of raw AWS credentials
       </Accordion>
 
     </AccordionGroup>
@@ -52,10 +52,10 @@ The AWS Connector in Cloudsania is a secure bridge between your Cloudsania accou
 </Tabs>
 
 
-### AWS IAM Policies
+### AWS Connector Access Type
 
 <Info>
-  The AWS Connector supports two access models to match your security requirements and operational needs.
+  The AWS Connector supports two access types to match your security requirements and operational needs.
 </Info>
 
 <CardGroup cols={2}>
@@ -67,7 +67,7 @@ The AWS Connector in Cloudsania is a secure bridge between your Cloudsania accou
      -Permission to manage security configurations.
      
   </Card>
-  <Card title="Least Privilege" icon="shield-halved">
+  <Card title="Least Privilege Access" icon="shield-halved">
     **For restricted access**
 
     -Restricted to specific resources.
@@ -78,7 +78,7 @@ The AWS Connector in Cloudsania is a secure bridge between your Cloudsania accou
   </Card>
 </CardGroup>
 
-### Required AWS Permissions
+### Cloudsania Default Access Policy
 
 <CodeGroup>
 ```json Default Access
@@ -102,9 +102,6 @@ The AWS Connector in Cloudsania is a secure bridge between your Cloudsania accou
 }
 ```
 
-```json Least Privilege
-
-```
 </CodeGroup>
 
 ## Changes to Your AWS Account

@@ -1,6 +1,6 @@
 ---
 title: 'How to Set Up AWS Connector'
-description: 'Complete guide to configuring AWS cloud connector in Cloudsania'
+description: 'Step-by-step guide to setting up AWS cloud connector in Cloudsania'
 ---
 
 ## Overview
@@ -8,16 +8,17 @@ description: 'Complete guide to configuring AWS cloud connector in Cloudsania'
 This guide walks you through setting up an AWS connector in Cloudsania, enabling you to manage your AWS resources efficiently.
 
 
-## Prerequisites
+<Note>
+  **Prerequisites**
 
-This guide assumes you have the following:
-- Access to the Cloudsania platform
-- AWS account access
-- Basic understanding of AWS services
+  1. You have an active [AWS account](https://aws.amazon.com/)
 
-## **Setting Up AWS Cloud Connector**
+  2. You have the necessary permission to create IAM users.
+</Note>
 
-### Video Tutorial: Setting Up AWS Connector
+## **Setting Up AWS Cloud Connectors**
+
+#### Video Tutorial: Setting Up AWS Default Access Connector
 
 <iframe
   src="https://player.vimeo.com/video/1079076944?h=03ac348728"
@@ -28,137 +29,81 @@ This guide assumes you have the following:
   allowFullScreen
 ></iframe>
 
-### ✅  Navigate to Cloud Connectors
+1. On the side navbar, click on "Cloud Connnector".
 
-1️⃣  Log in to your [Cloudsania](https://console.cloudsania.com/auth/sign-in) account.
+2. Click on "New Connector" button on the Cloud Connector Page.
 
-2️⃣  Click on **Cloud Connectors** from the left navbar.
+![](/images/aws-connector/no-connector-state.png)
 
-3️⃣  Click the **New Connector** button.
+3. Select the "AWS" option from the list of cloud providers displayed and click on the "Confirm" button.
 
-![No Connectors Setup](/images/aws-connector/empty-connector-state.png)
+![](/images/aws-connector/cloud-provider-list.png) 
 
-### ✅  **Select AWS as your Cloud Provider.** &#x20;
-
-1️⃣  From the list of available cloud providers, select '**AWS'**.
-
-2️⃣  Click **'Confir&#x6D;*'*** to proceed.
-
-### ✅ Provide Your Connector Details
-
-1️⃣ Enter Your Connector Name
-
-2️⃣ Select your AWS Regions from the list of regions. You'll get a dropdown to choose your desired  AWS Regions.
+4. Provide Your Connector Details.
+   -  Enter Your Connector Name.
+   -  Select your AWS Regions. You'll get a dropdown to choose your desired  AWS Regions.
 
 ![](/images/aws-connector/select-aws-connector.png)
 
-### ✅ Choose Your Development Type
+5. Configure Your Connector Access. Choose your preferred [AWS Connector access](/cloud-connectors/aws-connector#aws-connector-access-type) type.
 
-Choose the appropriate access privileges (Default Access or Least Privilege Access)&#x20;
+6. Configure Your Connector for "Default Access".
 
-1️⃣  **Default Access**- Allows Cloudsania to scan your resources and automatically include future capabilities (**Highly recommended**)
-
-2️⃣   **Least Privilege Access**- Grants Cloudsania access only to the current permissions needed for the selected konstack.
-
-
-### ✅ **Configure Your Connector** for Default Access
-
-1️⃣  Choose **Default Access (Recommended)** to allow Cloudsania to scan your resources and automatically include future capabilities.
-
-2️⃣  Click the **CloudFormation Launch template** link provided in the setup.
-
-3️⃣  This will navigate you to AWS CloudFormation in your AWS account.
+   - Click the "CloudFormation Launch template" link for easy setup with [Cloudsania default access policy](/cloud-connectors/aws-connector#required-aws-permissions).
+   - This will open a new tab and redirect you to AWS CloudFormation page.
 
 ![](/images/aws-connector/configure-connector-access.png)
 
-### ✅  Create CloudFormation Stack
-
-In AWS CloudFormation:
-
-1️⃣  The **template source and** **Amazon S3 URL will be preselected**
-
-2️⃣  **The** **Amazon S3 URL** will be provided in the field.
-
-3️⃣   Simply click '**Next'** to proceed.
+7. Proceed to create a CloudFormation Stack.
+    - The Template (Choose an existing template) and "Template source"(Amazon S3 URL) will be preselected for you
+    - Simply click "Next" to proceed.
 
 ![](/images/aws-connector/create-cloudformation-stack.png)
 
-4️⃣ Specify Stack Details by providing the **Stack Name**, e.g., `aws-connector-stack`
-
-5️⃣ Click '**Next'**
+8. Specify Stack Details > Stack name will be provided by default based on your connector name provided in step 4. Simply click "Next"
 
 ![](/images/aws-connector/specify-stack-name.png)
 
-6️⃣  Configure Stack Options(Optional) such as:
+9. Configure Stack Options(Optional Step)
 
-* **Tags**
+10. Review all Configurations and click "Submit" to create the stack.
 
-* **IAM Role**
-
-* **Stack failure options**
-
-
-7️⃣  Review all Configurations and click '**Submit'** to create the stack.&#x20;
-
-
-8️⃣  Monitor Stack Creation - The stack will begin deploying. Wait until the status changes to **`CREATE_COMPLETE`**
+11. Monitor Stack Creation -The stack will begin deploying. Wait until the status changes to "CREATE_COMPLETE"
 
 ![](/images/aws-connector/successful-stack-creation.png)
 
-9️⃣  Once the stack is successfully created, Click on '**Outputs**.
+12. Click on "Outputs" tab when the stack status changes to "CREATE_COMPLETE"
 
-🔟  Copy the generated keys and store them securely:
+13. Retrieve the generated keys and store them securely:
 
-📌 Access Key ID
+    📌 Access Key ID
 
-📌 Secret Access Key
+    📌 Secret Access Key
 
-📌 AWS Account ID
+    📌 AWS Account ID
 
 ![](/images/aws-connector/stack-output.png)
 
-### ✅ Return to the Cloudsania AWS Connector setup (Enter Keys)
+13. You can now switch back to your Cloudsania tab opened to the left and continue the connector setup.
 
-Return to the Cloudsania AWS Connector setup.
+14. Proceed to Enter the Keys retrieved in the stack output.
+    
+    - Enter your "AWS Account ID", "Access Key", and "Secret Key" in the relevant fields
+    - Click on the "Create" button
 
-1️⃣  Paste your **AWS Account ID**, **Access Key**, and **Secret Key** in the provided fields
+![](/images/aws-connector/enter-keys.png)
 
-2️⃣  Click **Create**.
+14. Upon successful creation, your AWS default access connector will now appear on the "Cloud Connectors" page and the status marked as "Active"
 
+![](/images/aws-connector/aws-default-access-connector.png)
 
-### ✅  Verify the Creation of Your AWS Connector on Cloudsania
-
-📌 The AWS Connector will now appear in the **Cloud Connectors** list.
-
-📌 Confirm that the **Status** is marked as **Active**.
-
-Your AWS Connector is now successfully configured! 🎉
-
+## Next Steps
+ ✅ Verify the creation of your "Setupaccess-Connector" on the "Cloud Connectors" page.
+     Wait for fews seconds and you'll see the the create Setupaccess-Connectors.
 ![](/images/aws-connector/aws-connectors.png)
 
-
-### ✅  Verify the Creation of IAM users on your AWS account
+ ✅ Verify the creation of the corresponding IAM users on your AWS account
 
 ![](/images/aws-connector/aws-iam-users.png)
 
-This allows Cloudsania to integrate seamlessly with your AWS account, enabling streamlined automation and cloud management. 🚀
-
-## Troubleshooting
-
-Common issues and solutions:
-- Authentication failures
-- Permission errors
-- Region availability
-- Service limits
-
-## Best Practices
-
-1. Security
-   - Use IAM roles when possible
-   - Regular security reviews
-   - Enable MFA for root account
-
-2. Organization
-   - Clear naming conventions
-   - Resource tagging
-   - Documentation maintenance
+Your AWS Connector is now successfully configured and ready for use! 🎉
