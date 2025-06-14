@@ -1,0 +1,115 @@
+---
+title: 'How to Configure DNS Records'
+description: 'Complete guide to managing DNS records in Cloudsania across different providers'
+---
+
+## Overview
+
+This guide explains how to configure and manage DNS records in Cloudsania, supporting multiple DNS providers including Cloudflare, Route53, and others.
+
+## Prerequisites
+
+- A Cloudsania account
+- Domain name
+- Access to your DNS provider
+- Integrated DNS provider (Cloudflare, Route53, etc.)
+
+## DNS Configuration Steps
+
+## 🎯 How  To Configure DNS Records
+
+<Note>
+  ### **Prerequisites for Setting Up a CI/CD Pipeline**
+
+  Before proceeding with creating a DNS record, ensure the following:
+
+  📌 You have a registered domain name.
+
+  📌 Your Cloudsania account is integrated with a domain registrar (Route53, DigitalOcean, or Cloudflare). If you haven’t integrate one yet, follow the guide below:
+
+  👉 [Integrating Cloudflare with Cloudsania](https://docs.cloudsania.com/integrations/cloud-flare)
+
+   
+
+  👉 [Integrating Route53 with Cloudsania](https://docs.cloudsania.com/integrations/route53)[ ](https://docs.cloudsania.com/integrations/route53)
+
+  👉 [Integrating Digital Ocean with Cloudsania ](https://docs.cloudsania.com/integrations/digital-ocean)
+</Note>
+
+![](https://api.monosnap.com/file/download?id=pSLnpAeAlUccEp4rzmML1GVJSHfYqX)
+
+### 📌  **Configuring  a Domain Record For Your Domain**
+
+To configure a domain record:
+
+1️⃣  Select Your Project and Environment
+
+2️⃣  Navigate to the environment details page
+
+3️⃣  Select the 'DNS Configuration' tab
+
+4️⃣  Click on 'Create Record'
+
+5️⃣  Select the 'Domain' tab
+
+6️⃣  Enter the required details
+
+✅  Domain Registrar: Select your integrated registrar from the dropdown list (e.g, Cloudflare, Digital Ocean, Route53).
+
+✅  Record Name: Enter your domain name (e.g., `example.com`).
+
+✅  Record Type: Choose the appropriate DNS record type (A, CNAME, MX, etc.).
+
+✅  Select your deployed App Service or Konstack server
+
+✅  Set the appropriate TTL (Time-To-Live) value.
+
+&#x20;7️⃣ Click 'Create Recor&#x64;**'** to complete the domain record configuration.
+
+![](https://api.monosnap.com/file/download?id=bvXQskko9vcPH2ayfMUsTsKTWI5i86)
+
+![](https://api.monosnap.com/file/download?id=Vl1JNaax7zhB5scJpmOtA7q1iRllms)
+
+### &#x20;📌  **Configuring  a Subdomain Record**
+
+To configure a subdomain:
+
+1️⃣  Select Your Project and Environment
+
+2️⃣  Navigate to the environment details page
+
+3️⃣  Select the 'DNS Configuration' tab
+
+4️⃣  Click on 'Create Record'
+
+5️⃣  Select the 'Subdomain' tab
+
+6️⃣  Enter the required details
+
+&#x20;       ✅  Domain Registrar: Select your integrated registrar from the dropdown list (e.g, Cloudflare, Digital Ocean, Route53).
+
+&#x20;       ✅  Record Name: Enter your domain name (e.g., `example.com`).
+
+&#x20;        ✅ Select your Domain
+
+&#x20;        ✅  Record Type: Choose the appropriate DNS record type (A, CNAME, MX, etc.).
+
+&#x20;        ✅  Select your deployed App Service or Konstack server
+
+&#x20;        ✅  Set the appropriate TTL (Time-To-Live) value.
+
+&#x20;7️⃣ Click 'Create Recor&#x64;**'** to complete the subdomain record configuration.
+
+![](https://api.monosnap.com/file/download?id=JdQ7qRfEtx7zLwVNv8hDMBUQ9qLroq)
+
+### 📌 **Updating an Existing Record**
+
+* Locate the record in the DNS table.
+
+* Click **Edit**, modify the necessary fields, and save the changes.
+
+### 📌 **Deleting a DNS Record**
+
+* Click **Delete** next to the record you wish to remove.
+
+* Confirm deletion when prompted.

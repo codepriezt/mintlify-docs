@@ -1,72 +1,164 @@
 ---
-title: "App Service"
-description: "Provision and deploy your applications seamlessly using Cloudsania's App Services. This section guides you through setting up and deploying app services seamlesly."
+title: "App Services"
+description: "Learn about App Services in Cloudsania: Feature and Capabilities"
 ---
 
-## What is An App Service in Cloudsania?
+## What is An App Service?
 
 <Note>
-  Cloudsania's **App Services** provide a streamlined way to provisio&#x6E;**,** deplo&#x79;**,** and manage applications across cloud environments using pre-configured [**Konstacks**](https://developer.cloudsania.com/environments/konstacks). App services automate the deployment process, ensuring seamless integration with cloud providers and source control systems.
+  Cloudsania's **App Services** provide a streamlined way to provision, deploy, and manage applications across cloud environments using pre-configured [**Konstacks**](/environments/konstacks). App services automate the deployment process, ensuring seamless integration with cloud providers and source control systems.
 </Note>
 
-⚠️ **Note:** Currently, only the E-commerce App Service is fully functional. Cloudsania is continuously expanding its App service offerings. Stay tuned for more App Services!
+## Provisioned Resources
 
-# **How to Deploy an App Service**
+When you deploy an App Service, Cloudsania automatically provisions and configures the following resources based on your selected cloud provider:
 
-Follow these steps to successfully deploy an App Service in Cloudsania:
+### Core Infrastructure
+<CardGroup>
+  <Card title="Compute Resources" icon="server">
+    - Container instances for application hosting
+    - Load balancer for traffic distribution
+    - Auto-scaling configuration
+    - Container registry for image storage
+  </Card>
+  
+  <Card title="Network Infrastructure" icon="network-wired">
+    - Virtual private cloud (VPC)
+    - Public and private subnets
+    - Security groups and firewall rules
+    - DNS configuration and routing
+  </Card>
+</CardGroup>
 
-## 🔗 **Step 1: Select an App Service**
+### Data & Storage
+<CardGroup>
+  <Card title="Database Services" icon="database">
+    - Primary database instance
+    - Database backup configuration
+    - Read replicas (if configured)
+    - Connection security settings
+  </Card>
+  
+  <Card title="Storage Solutions" icon="hard-drive">
+    - Object storage for static assets
+    - File system for application data
+    - Backup storage configuration
+    - Data encryption at rest
+  </Card>
+</CardGroup>
 
-1. Navigate to 'App Service from the sidebar.
+### Security & Monitoring
+<CardGroup>
+  <Card title="Security Components" icon="shield">
+    - SSL/TLS certificates
+    - IAM roles and policies
+    - Security group rules
+    - Network ACLs
+  </Card>
+  
+  
+</CardGroup>
 
-2. Select an available app service (e.g., **E-commerce APS**).
+## App Service Architecture
 
-3. Click 'Deploy App Servic&#x65;**'**.
+The ECS (Elastic Container Service) Konstack is a pre-configured infrastructure template that powers App Services on AWS. Here's a detailed breakdown of its components:
 
-![](https://api.monosnap.com/file/download?id=NR8XcLYbw7gpFglpHnVnfu3Fkf6INS)
+### Container Orchestration
+<CardGroup>
+  <Card title="ECS Cluster" icon="boxes-stacked">
+    - Managed container orchestration
+    - Task definition management
+    - Service auto-scaling
+    - Container health monitoring
+  </Card>
+  
+  <Card title="Task Configuration" icon="gears">
+    - CPU: 256 units
+    - Memory: 512MB
+    - Network Mode: awsvpc
+    - Launch Type: FARGATE
+    - Port mapping and routing
+  </Card>
+</CardGroup>
 
-### **Step 2: Select a Project**
+### Load Balancing & Networking
+<CardGroup>
+  <Card title="Application Load Balancer" icon="network-wired">
+    - Public-facing load balancer
+    - HTTP/HTTPS routing
+    - Health check configuration
+    - SSL/TLS termination
+  </Card>
+  
+  <Card title="Network Configuration" icon="diagram-project">
+    - VPC with public/private subnets
+    - Security group rules
+    - IAM roles and policies
+    - Auto-scaling policies
+  </Card>
+</CardGroup>
 
-1. Choose whether to deploy into a new project or an existing project.
+### IAM & Security
+<CardGroup>
+  <Card title="Task Execution Role" icon="shield-check">
+    - ECS task execution permissions
+    - ECR image pull access
+    - CloudWatch logs access
+    - Secrets Manager access
+  </Card>
+  
+  <Card title="Service Roles" icon="user-shield">
+    - Auto-scaling service role
+    - ECS service role
+    - Load balancer access
+    - VPC endpoint policies
+  </Card>
+</CardGroup>
 
-2. If selecting an existing project, choose from the available projects.
+## Features and Capabilities
 
-3. Specify whether the project is:
+### 1. Automated Deployment
+- One-click deployment process
+- Automated infrastructure provisioning
+- Built-in CI/CD pipeline integration
+- Container orchestration and management
+- Load balancing and auto-scaling capabilities
 
-   * **For Go Live** – Ready for production.
+### 2. Pre-configured Infrastructure
+- Industry-standard architecture patterns
+- Best practice security configurations
+- Optimized performance settings
 
-   * **Still Developing** – In the development phase.
 
-4. Click 'Continue' to proceed.
+### 4. Pre-configured Environment 
+- Development, Staging, and Production environments
+- Environment-specific configurations
 
-![](https://api.monosnap.com/file/download?id=H4T72TdUu012DF9Ua2j7l1JUuhiaJg)
+## Available App Services
 
-### **Step 3: Choose a Cloud Provider**
+<CardGroup>
+  <Card title="E-commerce App Service" icon="shopping-cart">
+    **Full-featured E-commerce Platform**
+    - Complete e-commerce functionality
+    - Product management
+    - Order processing
+    - Payment integration
+    - Inventory management
+  </Card>
+  
+  <Card title="Coming Soon" icon="clock">
+    **More App Services**
+    Stay tuned for additional app services tailored to different use cases and industries.
+  </Card>
+</CardGroup>
 
-1. Select your preferred service provider (e.g., AWS, NameCheap).
 
-2. Choose an existing cloud connector or set up a new one from the [Cloud Connectors](https://developer.cloudsania.com/gettingStarted/cloudConnectors) module
+### Ready to Deploy Streamline Your Deployment?
+<Card
+  title="Deploy Your App Service"
+  icon="rocket"
+  href="/how-to-guides/how-to-deploy-an-appservice"
+>
+  Learn how to deploy and manage your applications using App Services
+</Card>
 
-3. Click **'Create'** to proceed.
-
-![](https://api.monosnap.com/file/download?id=IDPEZbLcp5TQZvZSeFxtB083IPAJra)
-
-### **Step 4: Connect to a Source Control**&#x20;
-
-1. Enable ['GitHub integration'](https://developer.cloudsania.com/integrations/github) from the Integrations Module.
-
-### **Step 5: Deploy Your App Service**
-
-1. Click 'Deploy App Servic&#x65;**'** to initiate the deployment.
-
-Upon successful App Service deployment, you'll be navigated to the provisioned environment to view the deployed App Service and the pre-configured Konstacks
-
-![](https://api.monosnap.com/file/download?id=47g2PaQXkMGGZDzKHfiTcGUPY61MVP)
-
-![](https://api.monosnap.com/file/download?id=ef3CvAILtVjCpxctCK5aYyibE7si8r)
-
-## &#x20;📌 Next Steps
-
-After deploying an App Service, you need to configure it according to the selected **Project Mode**.
-
-***

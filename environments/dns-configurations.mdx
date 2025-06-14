@@ -1,108 +1,134 @@
 ---
-title: " 🌐 DNS Confirguration"
-description: "This guide provides step-by-step guides on configuring DNS records and managing custom domains."
+title: "Network Security (DNS)"
+description: "Configure and manage domain names across multiple DNS providers"
 ---
 
 <Note>
-  The Domain Name System (DNS) translates human-readable domain names into IP addresses, enabling seamless access to online services. It is essential for directing traffic and ensuring efficient communication between systems.
-
-  In Cloudsania, DNS helps organizations deploy their projects by mapping applications, services, and environments to domain names. This allows users to access deployed projects easily, ensures proper traffic routing, and enhances scalability across cloud environments. With Cloudsania's integrated DNS management, users can configure and maintain domain records effortlessly.
+The Domain Name System (DNS) translates human-readable domain names into IP addresses, enabling seamless access to online services. It is essential for directing traffic and ensuring efficient communication between systems.
 </Note>
 
-## 🎯 How  To Configure DNS Records
+
+DNS (Domain Name System) in Cloudsania enables seamless domain management and traffic routing for your applications. With integrated support for multiple DNS providers, you can easily configure and manage your domain records directly from the Cloudsania platform.
+
+## Supported DNS Providers
+
+<CardGroup cols={3}>
+  <Card title="Cloudflare" icon="cloud">
+    **Cloud DNS Provider**
+    - DDoS protection
+    - SSL/TLS encryption
+    - DNS caching
+    - Proxy support
+  </Card>
+
+  <Card title="Route 53" icon="aws">
+    **AWS DNS Service**
+    - Global DNS network
+    - Health checking
+    - Domain registration
+    - Traffic routing
+  </Card>
+
+  <Card title="DigitalOcean" icon="droplet">
+    **DO DNS Service**
+    - Simple management
+    - Quick propagation
+    - Domain forwarding
+    - Load balancing
+  </Card>
+</CardGroup>
+
+## Supported Record Types
+
+<CardGroup cols={3}>
+  <Card title="Cloudflare Records" icon="cloud">
+    - **A**: IPv4 address mapping
+    - **AAAA**: IPv6 address mapping
+    - **CNAME**: Domain aliasing
+    - **MX**: Mail server records
+    - **TXT**: Text records
+    - **SRV**: Service location
+    - **NS**: Nameserver records
+    - **PTR**: Reverse DNS lookup
+    - **CAA**: Certificate authority
+  </Card>
+
+  <Card title="Route 53 Records" icon="aws">
+    - **A**: IPv4 address mapping
+    - **AAAA**: IPv6 address mapping
+    - **CNAME**: Domain aliasing
+    - **MX**: Mail server records
+    - **NS**: Nameserver records
+    - **CAA**: Certificate authority
+    - **PTR**: Reverse DNS lookup
+    - **SOA**: Start of authority
+  </Card>
+
+  <Card title="DigitalOcean Records" icon="droplet">
+    - **A**: IPv4 address mapping
+    - **AAAA**: IPv6 address mapping
+    - **CNAME**: Domain aliasing
+    - **MX**: Mail server records
+    - **TXT**: Text records
+    - **SRV**: Service location
+    - **SOA**: Start of authority
+    - **NS**: Nameserver records
+    - **PTR**: Reverse DNS lookup
+    - **CAA**: Certificate authority
+  </Card>
+</CardGroup>
 
 <Note>
-  ### **Prerequisites for Setting Up a CI/CD Pipeline**
-
-  Before proceeding with creating a DNS record, ensure the following:
-
-  📌 You have a registered domain name.
-
-  📌 Your Cloudsania account is integrated with a domain registrar (Route53, DigitalOcean, or Cloudflare). If you haven’t integrate one yet, follow the guide below:
-
-  👉 [Integrating Cloudflare with Cloudsania](https://docs.cloudsania.com/integrations/cloud-flare)
-
-   
-
-  👉 [Integrating Route53 with Cloudsania](https://docs.cloudsania.com/integrations/route53)[ ](https://docs.cloudsania.com/integrations/route53)
-
-  👉 [Integrating Digital Ocean with Cloudsania ](https://docs.cloudsania.com/integrations/digital-ocean)
+  Each record type has specific configuration requirements. For example:
+  - MX records require priority settings
+  - SRV records need port and weight configurations
+  - CAA records require flags and tag values
 </Note>
 
-![](https://api.monosnap.com/file/download?id=pSLnpAeAlUccEp4rzmML1GVJSHfYqX)
+## Key Features
 
-### 📌  **Configuring  a Domain Record For Your Domain**
+- **Multi-Provider Support**: Manage domains across different providers
+- **Automated DNS Management**: Automatic record creation and updates
+- **SSL/TLS Integration**: Built-in certificate management
+- **Custom TTL**: Configurable Time-To-Live values
+- **Subdomain Support**: Create and manage multiple subdomains
 
-To configure a domain record:
+## Provider Setup Guides
 
-1️⃣  Select Your Project and Environment
+<CardGroup cols={3}>
+  <Card
+    title="Cloudflare Setup"
+    icon="cloud"
+    href="/how-to-guides/how-to-integrate-cloudflare"
+  >
+    Configure Cloudflare DNS integration
+  </Card>
 
-2️⃣  Navigate to the environment details page
+  <Card
+    title="Route 53 Setup"
+    icon="aws"
+    href="/how-to-guides/how-to-integrate-route53"
+  >
+    Set up AWS Route 53 DNS management
+  </Card>
 
-3️⃣  Select the 'DNS Configuration' tab
+  <Card
+    title="DigitalOcean Setup"
+    icon="droplet"
+    href="/how-to-guides/how-to-integrate-digitalOcean"
+  >
+    Configure DigitalOcean DNS settings
+  </Card>
+</CardGroup>
 
-4️⃣  Click on 'Create Record'
+## DNS Record Management
 
-5️⃣  Select the 'Domain' tab
+<Card
+  title="Configure DNS Records"
+  icon="gear"
+  href="/how-to-guides/how-to-configure-DNS-records"
+>
+  Learn how to create, update, and manage DNS records for your domains
+</Card>
 
-6️⃣  Enter the required details
 
-✅  Domain Registrar: Select your integrated registrar from the dropdown list (e.g, Cloudflare, Digital Ocean, Route53).
-
-✅  Record Name: Enter your domain name (e.g., `example.com`).
-
-✅  Record Type: Choose the appropriate DNS record type (A, CNAME, MX, etc.).
-
-✅  Select your deployed App Service or Konstack server
-
-✅  Set the appropriate TTL (Time-To-Live) value.
-
-&#x20;7️⃣ Click 'Create Recor&#x64;**'** to complete the domain record configuration.
-
-![](https://api.monosnap.com/file/download?id=bvXQskko9vcPH2ayfMUsTsKTWI5i86)
-
-![](https://api.monosnap.com/file/download?id=Vl1JNaax7zhB5scJpmOtA7q1iRllms)
-
-### &#x20;📌  **Configuring  a Subdomain Record**
-
-To configure a subdomain:
-
-1️⃣  Select Your Project and Environment
-
-2️⃣  Navigate to the environment details page
-
-3️⃣  Select the 'DNS Configuration' tab
-
-4️⃣  Click on 'Create Record'
-
-5️⃣  Select the 'Subdomain' tab
-
-6️⃣  Enter the required details
-
-&#x20;       ✅  Domain Registrar: Select your integrated registrar from the dropdown list (e.g, Cloudflare, Digital Ocean, Route53).
-
-&#x20;       ✅  Record Name: Enter your domain name (e.g., `example.com`).
-
-&#x20;        ✅ Select your Domain
-
-&#x20;        ✅  Record Type: Choose the appropriate DNS record type (A, CNAME, MX, etc.).
-
-&#x20;        ✅  Select your deployed App Service or Konstack server
-
-&#x20;        ✅  Set the appropriate TTL (Time-To-Live) value.
-
-&#x20;7️⃣ Click 'Create Recor&#x64;**'** to complete the subdomain record configuration.
-
-![](https://api.monosnap.com/file/download?id=JdQ7qRfEtx7zLwVNv8hDMBUQ9qLroq)
-
-### 📌 **Updating an Existing Record**
-
-* Locate the record in the DNS table.
-
-* Click **Edit**, modify the necessary fields, and save the changes.
-
-### 📌 **Deleting a DNS Record**
-
-* Click **Delete** next to the record you wish to remove.
-
-* Confirm deletion when prompted.

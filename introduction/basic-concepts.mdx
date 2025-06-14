@@ -1,0 +1,81 @@
+---
+title: 'Basic Concepts'
+description: 'Understanding the fundamental concepts and terminology of Cloudsania'
+---
+
+## Core Concepts Overview
+
+Before diving into Cloudsania, it's essential to understand the key concepts that form the foundation of our platform. This comprehensive guide covers everything from organizational structure to technical components.
+
+
+### Organizations
+Organizations are the top-level entities in Cloudsania that represent your company or team:
+
+
+### Projects
+A Project in Cloudsania is your central infrastructure hub that contains all the components of your application. It serves as the foundation where all your cloud resources, environments, and configurations come together in one unified platform. Projects represents a tech solution designed to solve a specific user-facing problem.
+<CardGroup cols={2}>
+  <Card title="Project Modes" icon="folder-tree">
+    - Easy Mode
+    - Developer Mode
+    - Professional Mode
+  </Card>
+  <Card title="Project Features" icon="gears">
+    - Resource Management
+    - Environment Isolation
+    - Team Collaboration
+    - Deployment Workflows
+  </Card>
+</CardGroup>
+
+### Cloud Service Providers
+A cloud service provider (CSP) is a company that offers cloud computing services such as storage, databases, and infrastructure at scale to organizations.
+
+<AccordionGroup>
+  <Accordion title="Amazon Web Services (AWS)">
+    - **EC2**: Virtual server hosting
+    - **ECS**: Container orchestration
+    - **VPC**: Network isolation
+    - **IAM**: Access management
+    - **Route53**: DNS management
+  </Accordion>
+  
+  <Accordion title="Digital Ocean">
+    - **Droplets**: Virtual machines
+    - **Kubernetes**: Container orchestration
+    - **Spaces**: Object storage
+    - **Load Balancers**: Traffic distribution
+  </Accordion>
+  
+  <Accordion title="Virtual Servers">
+    - **SSH Key**
+    - **VPS Server**
+  </Accordion>
+</AccordionGroup>
+
+### Cloud Connectors
+Cloud Connectors are configuration settings that allow you to seamlessly and securely integrate your organization’s cloud provider accounts with Cloudsania’s automation platform. They act as a secure bridge between Cloudsania and your Cloud Provider, enabling smooth interaction while maintaining security and compliance.
+
+
+## Deployment Components
+
+### Environments
+Environments in Cloudsania are isolated infrastructure spaces that represent different stages of your application lifecycle. Each environment is configured with its own set of resources, security policies, and access controls.
+
+### Konstacks
+Konstacks are pre-configured infrastructure templates in Cloudsania that allow users provision, configure, and manage cloud instances within their environments. It simplifies the process of deploying compute resources such as EC2, ECS instances, ensuring seamless scalability, availability, and reliability.
+
+
+### Add-ons
+Add-ons are pre-configured services that will extend your environment’s capabilities with essential infrastructure components like databases, caching solutions, and message queues. Each add-on will be deployed as an isolated, managed service within your environment.
+
+### App Services
+Pre-configured application deployment solutions that provide a streamlined way to provision, deploy, and manage applications across cloud environments using pre-configured Konstacks. App services automate the deployment process, ensuring seamless integration with cloud providers and source control systems.
+
+
+## Network & Security
+
+### DNS Management
+The Domain Name System (DNS) translates human-readable domain names into IP addresses, enabling seamless access to online services. It is essential for directing traffic and ensuring efficient communication between systems.
+
+

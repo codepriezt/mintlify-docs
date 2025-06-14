@@ -1,0 +1,121 @@
+---
+title: 'How to Set Up a CI/CD Pipeline'
+description: 'Complete guide to setting up and configuring CI/CD pipelines in Cloudsania'
+---
+
+## Overview
+
+This guide walks you through setting up a Continuous Integration/Continuous Deployment (CI/CD) pipeline in Cloudsania for automated application deployment.
+
+## Prerequisites
+
+- A Cloudsania account
+- GitHub integration configured
+- Application repository
+- Environment setup completed
+
+## Pipeline Setup Steps
+
+### Video Tutorial: Setting Up a CI/CD Pipeline
+
+<iframe
+  src="https://player.vimeo.com/video/1070286631?h=412f58a7e5"
+  width="100%"
+  height="400"
+  frameBorder="0"
+  allow="autoplay; fullscreen; picture-in-picture"
+  allowFullScreen
+></iframe>
+
+### 1. Access Pipeline Configuration
+
+1. Log in to Cloudsania
+2. Navigate to your project
+3. Go to **CI/CD Pipelines** 
+4. Click **Create Pipeline**
+
+### 2. Configure Source Control
+
+1. Select your repository
+2. Choose the branch
+3. Configure trigger settings:
+   - Push events
+   - Pull request events
+   - Tag events
+
+### 3. Define Pipeline Stages
+
+1. Build Stage
+   - Choose build environment
+   - Configure build commands
+   - Set up dependencies
+
+2. Test Stage
+   - Configure test runners
+   - Set up test environment
+   - Define test commands
+
+3. Deploy Stage
+   - Select deployment environment
+   - Configure deployment strategy
+   - Set up rollback options
+
+### 4. Environment Variables
+
+1. Add required variables
+2. Configure secrets
+3. Set up environment-specific values
+
+## Advanced Configuration
+
+### Pipeline Optimization
+- Caching strategies
+- Parallel execution
+- Resource allocation
+
+### Security Settings
+- Access control
+- Secret management
+- Compliance checks
+
+### Monitoring and Logs
+- Pipeline metrics
+- Build logs
+- Deployment status
+
+## Best Practices
+
+1. Pipeline Structure
+   - Modular stages
+   - Clear naming conventions
+   - Efficient workflows
+
+2. Testing Strategy
+   - Automated testing
+   - Integration tests
+   - Performance tests
+
+3. Deployment Strategy
+   - Blue-green deployment
+   - Canary releases
+   - Rollback procedures
+
+## Troubleshooting
+
+Common issues and solutions:
+- Build failures
+- Test failures
+- Deployment issues
+- Resource constraints
+
+## Maintenance
+
+1. Regular Updates
+   - Pipeline configuration
+   - Dependencies
+   - Security patches
+
+2. Performance Monitoring
+   - Build times
+   - Resource usage
+   - Success rates
